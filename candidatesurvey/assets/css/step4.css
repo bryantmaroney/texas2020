@@ -1,0 +1,185 @@
+
+.logo_section {
+	flex-direction: column;
+}
+.logo_section div {
+	max-width: 700px;
+}
+
+.thankyou_title {
+	font-size: 54px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+.verify_text {
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 46px;
+	margin-bottom: 0;
+}
+.enter_email_addr_inp {
+	width: 45%;
+	background: #fff;
+	color: black;
+	font-size: 30px;
+	border: none !important;
+	outline: none !important;
+	padding: 8px 10px;
+	text-align: center;
+}
+.enter_email_addr_inp::placeholder {
+    text-align: center;
+    color: black !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.ev_sbm_btn {
+	font-size: 28px;
+	padding: 8px 35px;
+}
+.sponsored_by_text {
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/*********************************************************************************************** Responsive */
+
+@media (max-height: 1440px) { /* For screen sizes 2560 */
+    
+}
+
+@media (max-height: 1080px) { /* For screen sizes 1920 */
+    .logo_section {
+        margin-bottom: 0;
+    }
+    .main_logo_img {
+        width: 50%;
+    }
+    .thankyou_title {
+        font-size: 40px;
+    }
+    .verify_text {
+        font-size: 36px;
+    }
+    .enter_email_addr_inp {
+        font-size: 26px;
+    }
+    .ev_sbm_btn {
+        font-size: 25px;
+        margin-bottom: 2rem;
+    }
+    .sponsored_by_text {
+        font-size: 26px;
+    }
+}
+
+@media (max-height: 1050px) { /* For screen sizes 1680 */
+    
+}
+
+@media (max-height: 900px) { /* For screen sizes 1600, 1440 */
+    .thankyou_title {
+        font-size: 32px;
+    }
+    .verify_text {
+        font-size: 26px;
+    }
+    .small_logos img {
+        width: 8%;
+    }
+    .ev_sbm_btn {
+        margin-bottom: 1rem;
+        font-size: 22px;
+    }
+    .sponsored_by_text {
+        font-size: 24px;
+    }
+    div:has(> p.thankyou_title) {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-height: 800px) { /* For screen sizes 1280 */
+    
+}
+
+@media (max-height: 768px) { /* For screen sizes 1366, 1360, 1024 */
+    
+}
+
+
+
+@media (max-width: 1366px) {
+	.enter_email_addr_inp {
+		width: 60%;
+        font-size: 24px;
+	}
+}
+
+@media (max-width: 1280px) {
+    .enter_email_addr_inp {
+        font-size: 22px;
+    }
+    .ev_sbm_btn {
+        font-size: 20px;
+    }
+    .sponsored_by_text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1141px) {
+    .enter_email_addr_inp {
+        font-size: 20px;
+    }
+    .ev_sbm_btn {
+        font-size: 18px;
+        padding: 6px 25px;
+    }
+    .sponsored_by_text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+	.enter_email_addr_inp {
+		width: 80%;
+	}
+}
+
+@media (max-width: 881px) {
+    .main_logo_img {
+        width: 50%;
+    }
+    .thankyou_title {
+        font-size: 28px;
+    }
+    .verify_text {
+        font-size: 22px;
+    }
+    .enter_email_addr_inp {
+        font-size: 18px;
+    }
+    .small_logos img {
+        width: 12%;
+    }
+}
+
+@media (max-width: 651px) {
+    .ev_sbm_btn {
+        font-size: 16px;
+        padding: 6px 25px;
+    }
+    .thankyou_title {
+        font-size: 24px;
+    }
+    .verify_text {
+        font-size: 18px;
+    }
+    .enter_email_addr_inp {
+        font-size: 16px;
+    }
+}

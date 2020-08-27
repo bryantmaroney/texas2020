@@ -1,0 +1,521 @@
+.SenateContainer
+ {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;   
+    /*padding-top: 20px;*/
+}
+.electionContainer ,.moneyContainer {
+    width:90%;
+    display:inline-block;
+    box-shadow: 1px 1px 12px 3px lightgrey;
+    font-family: 'Lato', sans-serif;
+    background: white;
+}
+.electionHead {
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: #C30100;
+    display: inline-block;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.moneyHead {
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: #1F3B78;
+    display: inline-block;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.SenateContainer .container .col > div {
+    padding: 0!important;
+    height: 40px;
+    background: white;
+    border-right: 0.5px solid #E1E1E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size:13px;
+}
+.SenateContainer .container .firstCol div {
+    justify-content: flex-start;
+    padding-left:15px !important;
+    font-weight: 600;
+    color: #1F3B78;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px !important
+}
+.SenateContainer .container .firstCol div:hover {
+    color:#C30100;
+}
+.SenateContainer .container .firstCol div i {
+    font-size: 16px;
+}
+.col-sm img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.chooseCandidate {
+    color: #fff;
+    font-size: 18px;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+.chooseCandidate0 {
+    background: #8FB1BD !important;
+}
+.chooseCandidate1 {
+    background: #548F9F !important;
+}
+.chooseCandidate2 {
+    background: #3A697A !important;
+}
+.chooseCandidate:hover {
+    background:#C6D5DA !important;
+    color:#568F9E;
+}
+.SenateContainer .container .col > div:nth-child(even) {
+    background:#F4F4F4;
+}
+.candImage {
+   width:90%;
+   height: 225px;
+}
+.candImage div {
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:transparent !important;
+    border:none !important;
+    
+}
+.story-txt {
+    
+}
+.candim {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.canContainer {
+    display:flex;
+    flex-direction:column;
+    height: 100% !important;
+}
+.canContainer .like {
+    margin-top: 30px;
+    height: 33px !important;
+    width: 90px !important;
+    background: #213d76 !important;
+    color: #fff;
+    border-radius: 30px;
+    width: 115px;
+    line-height: 42px;
+    font-size: 16px !important;
+    position: absolute;
+    bottom: 25px;
+}
+
+.like span img {
+    margin-right: 5px !important;
+    width: 20px;
+    height: 20px;
+}
+.nameSurname {
+    color: #213d76;
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+}
+
+.logo {
+    /*width: 140px;
+    height: 140px;*/
+    width: 85%;
+    object-fit: cover;
+}
+.candim a img {
+    border-radius: 50%;
+}
+@media (max-width: 1410px) {
+    .candim img {
+        width: 111px;
+        height: 111px
+    }
+    .canContainer .like {
+        bottom: 44px;
+    }
+}
+@media (max-width: 1025px) {
+
+    .show-comments #show_comments_moda {
+        width: 278px !important;
+    }
+
+    .SenateContainer .container .col > div {
+        font-size: 7px;
+    }
+
+    .candim a img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .candim {
+        width: 107px;
+    }
+
+    .nameSurname {
+        font-size: 12px;
+    }
+
+    .canContainer .like {
+        height: 27px !important;
+        width: 66px !important;
+        bottom: 36px !important;
+    }
+    .candImage {
+        height: 175px;
+        
+        padding: 0 4% !important;
+    }
+    .candImage .logo {
+        width: 95px;
+    }
+}
+
+@media (max-width: 901px) {
+    .like span img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .candim a img {
+        width: 55px !important;
+        height: 55px !important;
+    }
+
+    .canContainer .like {
+        height: 17px !important;
+        width: 42px !important;
+        font-size: 7px !important;
+        bottom: 35px !important
+    }
+
+    .candImage {
+        height: 160px
+    }
+
+    .nameSurname {
+        font-size: 12px;
+
+    }
+
+    .candImage div {
+        height: 80%;
+        width: 100%
+    }
+
+    .float {
+        font-size: 7px;
+        line-height: 10px;
+    }
+
+    .col-sm img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.firstCol > div {
+    text-align: left !important;
+}
+
+@media (max-width: 769px) {
+    
+     .candImage {
+        height: 143px;
+        width: 460px;
+        padding: 0 4% !important;
+        padding-top: 53px !important;
+        margin-bottom: 10px !important
+    }
+
+    .candim a img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .canContainer .like {
+        height: 21px !important;
+        width: 51px !important;
+    }
+
+    .canContainer .like {
+        font-size: 10px !important;
+        bottom: 25px !important;
+    }
+
+    .candImage {
+        height: 160px;
+    }
+
+    .like span img {
+        margin-right: 5px !important;
+        width: 11px;
+        height: 11px;
+    }
+
+    .nameSurname {
+        font-size: 9px;
+        width: 80px;
+    }
+
+    .candImage div {
+        height: 75%;
+    }
+
+    .candImage div {
+        
+        height: 100%;
+    }
+
+    /*.candImage div {
+        width: 100px;
+    }*/
+    .table-infosign ul li {
+        display: block;
+    }
+
+    .table-infosign ul {
+        width: 160px;
+        text-align: left;
+        display: inline-block;
+    }
+    .SenateContainer .container .firstCol div i {
+      font-size: 11px;
+    }
+
+    .table-infosign img {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 6px;
+    }
+
+
+}
+@media (max-width: 420px) {
+    .floatLeft {
+        display: table-caption;
+            /*width: 111% !important;*/
+    }
+}
+@media (min-width: 767px) and (max-width: 900px) {
+    .float {
+        width: 100px;
+        font-size: 5px;
+    }
+
+    .number-title {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ds-title {
+        font-size: 10px;
+    }
+
+    .unt-title {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1600px) {
+    
+    .SenateContainer .container .col > div {
+        font-size: 11px;
+        line-height: 11px;
+    }
+}
+
+@media (max-width: 1230px) {
+    
+    .SenateContainer .container .col > div {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    .left-cl-iiner {
+        min-height: 102px;
+        padding-bottom: 10px;
+    }
+    .inner-rgt-row {
+        height: auto;
+    }
+    .btm-logos ul {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .btm-logos ul img {
+        width: 76%;
+    }
+    .contuctSection span {
+        font-size: 9px;
+    }
+}
+@media (max-width: 770px) {
+    .container {
+        max-width: initial;
+    }
+    .candImage {
+        width: 97%;
+    }
+    .language-content {
+        left: 0 !important;
+        margin-left: 66px;
+
+    }
+    .right-col {
+        vertical-align: initial;
+    }
+    .inner-right {
+        margin-top: 50px;
+    }    
+}
+.languageContainer {
+    position: absolute !important; 
+    top:0 !important; 
+    width: 100% !important;
+}
+
+.SenateContainer .container .col > div {
+    line-height: 13px;
+    text-align: center;
+}
+
+.canContainer div div img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+@media (max-width: 1645px) {
+	.nameSurname {
+		font-size: 13px;
+	}
+
+	.canContainer div div img {
+	    width: 110px;
+	    height: 110px;
+	}
+
+	.canContainer .like {
+   
+	    height: 27px !important;
+	    width: 80px !important;
+	    font-size: 12px !important;
+
+	}
+
+	.like span img {
+	    width: 15px;
+	    height: 15px;
+	}
+}
+
+@media (max-width: 1270px) {
+
+	.nameSurname {
+	    font-size: 12px;
+	}
+}
+
+@media (max-width: 1027px) {
+	.canContainer .like {
+    	height: 20px !important;
+    	width: 60px !important;
+    	font-size: 10px !important;
+	}
+
+	.like span img {
+	    width: 10px;
+	    height: 10px;
+	}
+
+	.nameSurname {
+	    font-size: 9px;
+	}
+}
+
+@media (max-width: 999px) {
+	.nameSurname {
+	    font-size: 7px;
+	}
+
+	.canContainer .like {
+	    bottom: 18px !important;
+	}
+
+	.vid_sec .row .title {
+		font-size: 17px;
+	}
+}
+@media (max-width: 500px) {
+	.infobox p {
+	    font-size: 8px;
+	}
+
+	.modalChoice > div:nth-of-type(2) > div:nth-of-type(2) img, .modalChoice > div:nth-of-type(3) > div:nth-of-type(2) img, .modalChoice > div:nth-of-type(4) > div:nth-of-type(2) img, .modalChoice > div:nth-of-type(5) > div:nth-of-type(2) img {
+	    width: 60px !important;
+	    height: 60px !important;
+	}
+
+	.story-txt .choiceImg {
+	     margin-right: initial; 
+	}
+
+	.raitCount p {
+    	font-size: 10px;
+	}
+
+	.thumb-icon img {
+	    width: 13px;
+	}
+
+	.col-sm img {
+	    width: 13px;
+    	height: 13px;
+    	right: 3% !important;
+	}
+}

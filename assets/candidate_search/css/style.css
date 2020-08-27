@@ -1,0 +1,1167 @@
+
+/* ==== Hide content for desktop ==== */
+
+body{
+    background-color: #233567;
+}
+
+#candidate_search_section {
+    height: 100vh;
+}
+#candidate_search_section .mobile_view_content, #candidate_search_section .body_content, #candidate_search_section .cs_full_content {
+    height: 100%;
+}
+
+/* === Header start here === */
+
+.header{
+    background: #1a2e5a;
+    padding:40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.burger_icon{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+.burger_icon img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.header .navbarToggle{
+    background: #4a649d;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+}
+
+.header .navbarToggle ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbarToggle li{
+    list-style: none;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #233567;
+    padding: 0 0 7px 10px;
+}
+
+.header .navbarToggle li a{
+    color: #fff;
+}
+
+.navigateBar p, .navo p {
+    margin-bottom: 0;
+}
+
+
+
+/* === Header end here === */
+
+/* === Body start here === */
+
+.body_content{
+    margin: 40px 0 0 0;
+    padding: 0 0px;
+    position: relative;
+}
+
+.body_content h1{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 44px;
+    color: #4a649d;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.body_content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.cs_full_content {
+    padding: 0 2rem;
+}
+
+.body_content h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #7d88a6;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.district_images{
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.district_images a{
+    display: inline-block;
+    width: 25%;
+    list-style-type: none !important;
+}
+
+.district_images a img{
+    width: 50%;
+}
+.district_images a:hover {
+    text-decoration: none !important;
+}
+
+.district_images a h2{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.form_card{
+    background-color: #1e3062;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.form_card input[type="text"]{
+    background-color: #384d87;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    color: #6b7eb2;
+}
+
+.form_card input.city{
+    width: 60%;
+}
+
+.form_card input.zip{
+    width: 35%;
+}
+
+.form_card .start_btn{
+    background-color: #b5000f;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    color: #fff;
+    transition: .5 all ease;
+}
+
+.form_card .start_btn i{
+    opacity: .5;
+}
+
+.form_card .start_btn:hover{
+    background-color: #000;
+}
+
+/* ==== compare_card_section css start ==== */
+
+.compare_card_section{
+    margin: 0;
+}
+
+.compare_card{
+    display: flex;
+    border-top:1px solid #16244d;
+}
+
+.compare_card:last-child{
+    border-bottom: 1px solid #16244d;
+}
+
+.country_left_side{
+    background-color: #1a2e5a;
+    padding: 0 20px;
+    width: 30%;
+}
+
+.country_left_side img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.country_left_side h6{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.candidate_right_side{
+    width: 70%;
+    padding: 15px;
+    text-align: center;
+}
+
+.candidate_right_side h6{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.candidate_info{
+    width: 45%;
+    margin-top: 15px;
+}
+
+.candidate_info h5{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+.candidate_info > span.higlight{
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #2ca107;
+    position: relative;
+}
+
+.candidate_info > span.higlight .tick{
+    position: absolute;
+    right: 70px;
+    bottom: 5px;
+    background-color: #2ca107;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.candidate_info > span.higlight .tick i{
+    color: #fff;
+}
+
+.candidate_info > span img{
+    width: 100%;
+}
+
+.compare_btn{
+    background-color: #b5000f;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    width: auto;
+    color: #fff;
+    transition: .5 all ease;    
+    margin: 20px auto 0 auto;
+}
+
+.compare_btn img{
+    width: 20px;
+}
+
+.compare_btn .thumb_up{
+    margin-top: -7px;
+}
+
+.compare_btn .thumb_down{
+    transform: rotate(180deg);
+    opacity: .5;
+    margin-top: 5px;
+}
+
+.share_choice_btn{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.share_choice_btn button{
+    border: 1px solid #3d5589;
+    border-radius: 5px;
+    padding: 7px 20px;
+    background: transparent;
+    color: #fff;
+}
+
+.share_choice_btn button i{
+    opacity: .5;
+}
+
+/* ==== Step three css start ===== */
+
+.candidate_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.candidate_details_left{
+    width: 8%;
+}
+
+.candidate_details_left img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.candidate_details_right{
+    width: 91%;
+    padding: 15px;
+}
+
+.candidate_details_right h1{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 40px;
+    color: #4a649d;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+.candidate_details_right h5{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+}
+
+.candidate_table{
+    margin: 20px 0 0 0;    
+    background: #fff;
+    overflow-y: hidden;
+}
+
+.candidate_table table thead th{
+    background-color: #233567;
+    border-right: 1px solid #1e2d58;
+    border-bottom: none;
+    border-top: none;
+    padding: 10px 30px;
+}
+
+.candidate_table table thead th .candidate_title{
+    text-align: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.candidate_th_card{
+    width: 120px;
+}
+
+.candidate_name{
+    display: block;
+    text-align: center;
+    background-color: #344573;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.candidate_img{
+    position: relative;
+    display: inline-block;
+}
+
+.candidate_img img{
+    width: 100%;
+}
+
+.candidate_img.highlight{
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #2ca107;
+    position: relative;
+}
+
+.candidate_img.highlight .tick{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #2ca107;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.candidate_img.highlight .tick i {
+    color: #fff;
+}
+
+.candidate_th_card ul{
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.candidate_th_card ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.candidate_th_card ul li p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.candidate_th_card ul li .h6{
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.candidate_th_card ul li:nth-child(1) p{
+    color: #2ca107;
+}
+
+.candidate_th_card ul li:nth-child(2) p{
+    color: #c82433;
+}
+
+.candidate_th_card ul li:nth-child(3) p{
+    color: #7c89a6;
+}
+
+.candidate_th_card ul li img{
+    width: 20px;
+}
+
+.candidate_th_card ul li .thumb_down{
+    transform: rotate(180deg);
+    margin: 11px 0 0 0;
+}
+
+.candidate_table table tbody tr:nth-child(odd){
+    background: #eef2f9;
+}
+
+.candidate_table table tbody tr:nth-child(even) td{
+    text-align: center;
+    border-right: 1px solid #c7c6c6;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.candidate_table table tbody tr:nth-child(even) td:first-child{
+    background: url(../images/pattern_bg.png) repeat;
+}
+
+.candidate_table table tbody tr:nth-child(even) td:last-child{
+    border: none;
+}
+
+.candidate_table table tbody tr td h3{
+    font-size: 24px;
+    color: #1a2e5a;
+    font-weight: 900;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.candidate_table table tbody tr td h3 strong{
+    font-family: 'TitlingGothicFB Comp Bold';
+    color: #9ba7c3;
+    margin-right: 20px;
+    margin-top: 3px;
+    float: left;
+}
+
+.candidate_table table tbody tr td h3 span{
+   display: inline-block;
+   margin-left: 15px; 
+}
+
+.candidate_table table tbody tr td img{
+    width: 30px;
+} 
+
+.candidate_table table tbody tr td p{
+    color: #7c89a6;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.candidate_table .summary_box{
+    background-color: #d0d9e9;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px 0;
+}
+
+.candidate_table .summary_box h2.bold{
+    color: #1a2e5a;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+.candidate_table .summary_box h2.thin{
+    color: #1a2e5a;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.candidate_table .no_response_box{
+    background-color: #d0d9e9;
+    text-align: center;
+    margin: 24px 0 20px 0;
+    padding: 14px 0;
+}
+
+.candidate_table .no_response_box h2{
+    color: #7c89a6;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+.candidate_table .no_response_box h2 small{
+    text-transform: none;
+    display: block;
+    font-size: 16px;
+}
+
+.candidate_table .choose_candidate{
+    border: 1px solid #9ba7c3;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0 20px 30px 20px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #1a2e5a;
+}
+
+.candidate_table .choose_candidate h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.candidate_table .choose_candidate.active{
+    background-color: #2ca107;
+    color: #fff;
+}
+
+.comment_modal .close{
+    margin: 0;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    background: #b60010;
+    border-radius: 50%;
+    height: 30px;
+    width: 31px;
+    padding: 0 0 10px 0;
+    opacity: 9;
+    color: #fff;
+}
+
+.comment_modal .modal-header{
+    background-color: #e6ecf7;
+}
+
+.comment_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment_header .comment_header_img{
+    width: 120px;
+    margin-right: 20px;
+}
+
+.comment_header .comment_header_img img{
+    width: 100%;
+}
+
+.comment_header_name {
+    margin: 30px 0 0 0;
+}
+
+.comment_header .comment_header_name h1{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 30px;
+    color: #1a2e5a;
+    margin: 0 0 0px 0;
+    text-transform: uppercase;
+}
+
+.comment_header .comment_header_name h5{
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.comment_modal .comment_body{
+    padding: 10px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.comment_modal .comment_body .comment_body_header{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.comment_modal .comment_body .comment_body_header span{
+    display: inline-block;
+    width: 40px;
+    margin-right: 15px;
+    margin-top: -3px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #7c89a6;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+}
+
+.comment_modal .comment_body .comment_body_header span img{
+    width: 100%;
+}
+
+.comment_modal .comment_body .comment_body_header h3{
+    font-size: 24px;
+    color: #1a2e5a;
+    font-weight: 900;
+    margin: 0;
+}
+
+.comment_modal .comment_body .comment_body_header h3 strong{
+    font-family: 'TitlingGothicFB Comp Bold';
+    color: #9ba7c3;
+    margin-right: 10px;
+    margin-top: 3px;
+    float: left;
+}
+
+.comment_body p{
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.comment_modal .top_arrow{
+    position: absolute;
+    top: -31px;
+    left: 20%;
+}
+
+.comment_modal .top_arrow img{
+    width: 30px;
+}
+
+.vote_btn{
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #9ba7c3;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #2c4274;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: #fff;
+}
+
+/* ====== */
+
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip1 .tooltiptext {
+    width: 315px;
+    visibility: hidden;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    box-shadow: 0 0 10px #000;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip1 .tooltiptext h3{
+      font-size: 20px;
+      text-transform: none;
+      margin-bottom: 5px;
+  }
+
+  .tooltip1 .tooltiptext h3 strong{
+      margin:0 10px 0 0;
+  }
+  
+  .tooltip1 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip1:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .agree_btn{
+      border: none;
+      background-color: #2ca107;
+      padding: 5px 10px;
+      font-family: 'Lato', sans-serif;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: 800;
+      white-space: nowrap;
+      margin-right: 10px;
+      font-size: 12px !important;
+      border: 1px solid #2ca107;
+  }
+
+  .agree_btn img {
+    width: 12px !important;
+    opacity: .5;
+    margin-top: -7px;
+    margin-right: 5px;
+}
+
+.disagree_btn{
+    background-color: #b60010;
+    border: 1px solid #b60010;
+}
+
+.disagree_btn img{
+    margin-top: 0;
+}
+
+.neither_btn{
+    background: #fff;
+    color: #1a2e5a;
+    border: 1px solid #dde1e9;
+}
+
+.neither_btn small{
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.tooltiptext img.down_arrow {
+    position: absolute;
+    bottom: -7px;
+    left: 40px;
+}
+
+.form_heading{
+    font-family: 'TitlingGothicFB Comp Bold';
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+.flex_props {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .c-hide{
+        display: none;
+    }
+
+    .district_images{
+        flex-wrap: nowrap !important;
+    }
+
+    .district_images a{
+        display: inline-block;
+        background-color: #1a2e5a;
+        margin: 0 15px;  
+        padding: 30px 0;
+        border-radius: 5px;     
+        box-shadow: 0px 2px 2px #1a294f; 
+    }
+
+    .district_images a:first-child{
+        margin-left: 0;
+    }
+
+    .district_images a:last-child{
+        margin-right: 0;
+    }
+
+    .form_card {
+        margin-right: 0px;
+    }
+
+    .district_images a h2 {
+        font-size: 30px;
+        color: #939db1;
+    }
+
+    .compare_card {
+        display: flex;
+        border: 1px solid #16244d;
+        width: 48%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    .compare_card:nth-child(even){
+        margin-right: 0;
+    }
+
+    .compare_card:nth-child(odd){
+        margin-left: 0;
+    }
+
+    .candidate_info {
+        width: 20%;
+    }
+
+    .candidate_info > span.higlight .tick {
+        right: -12px;
+        bottom: 0;
+    }
+
+    .candidate_right_side .d-flex {
+        justify-content: flex-start !important;
+    }
+
+    .candidate_right_side .d-flex .candidate_info{
+        margin-right: 15px;
+    }
+
+    .compare_card{
+        margin-bottom: 40px;
+    }
+
+    .candidate_right_side{
+        position: relative;
+    }
+
+    .compare_btn {
+        border-radius: 0px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .candidate_info h5 {
+        font-size: 11px;
+    }
+
+    .candidate_info > span.higlight {
+        border: 3px solid #2ca107;
+    }
+
+    .share_choice_btn button {
+        border: 0px solid #3d5589;
+        font-size: 20px;
+    }
+
+    .back_btn_style {
+        border: 1px solid #3d5589;
+        border-radius: 5px;
+        padding: 7px 20px;
+        background: transparent;
+        color: #fff;
+        position: absolute;
+        position: absolute;
+        right: 0;
+        top: 6px;
+        transition: ease all 0.5s;
+    }
+
+    .back_btn_style i{
+        color: #3d5589;
+    }
+
+    .back_btn_style:hover{
+        color: #fff;
+        text-decoration: none;
+        background: #1a2e5a;
+    }
+
+    .country_left_side {
+        padding: 0 20px 30px 20px;
+        text-align: center;
+    }
+
+    .country_left_side img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .share_choice_btn_bg {
+        background: #324775;
+        padding: 20px 0;
+        margin-bottom: 0;
+    }
+
+    .candidate_th_card {
+        width: auto;
+    }
+
+    .candidate_table table thead th .candidate_title {
+        font-size: 13px;
+        margin: 5px 10px 0 0;
+        float: left;
+    }
+
+    .candidate_th_card {
+        display: flex;
+    }
+
+    .candidate_img {
+        width: 51px;
+        height: 51px;
+        margin-right: 10px;
+    }
+
+    .candidate_img.highlight{
+        border: 3px solid #2ca107;
+    }
+
+    .candidate_name {
+        width: 50px;
+        height: 50px;
+        font-size: 17px;
+        margin-right: 5px;
+    }
+
+    .candidate_img.highlight .tick {
+        right: -10px;
+        bottom: -6px;
+    }
+
+    .candidate_th_card ul {
+        margin: 0;
+    }
+
+    .candidate_th_card ul li {
+        margin-left: 5px;
+    }
+
+    .candidate_table .no_response_box {
+        padding: 18px 0;
+    }
+
+    .candidate_table .no_response_box h2 small {
+        margin: 3px 0 0 6px;
+        font-size: 13px;
+    }
+
+    .candidate_table .no_response_box h2{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .candidate_table table thead th {
+        background-color: #233567;
+        border: 1px solid #1e2d58;
+        padding: 10px 10px;
+    }
+
+    .candidate_table table thead th:first-child{
+        background-color: #1b2d5b;
+    }
+
+    .candidate_table .summary_box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .candidate_table .summary_box h2.bold{
+        display: inline-block;
+        margin-left: 6px;
+        margin-right: 6px;
+        font-size: 16px;
+    }
+
+    .candidate_table .summary_box h2.thin {
+        margin: 3px 0 0 0;
+        font-size: 13px;
+    }
+
+    .candidate_table .choose_candidate h2 {
+        font-size: 13px;
+    }
+
+    .candidate_table .choose_candidate {
+        height: 41px;
+    }
+
+    .share_choice_btn_border{
+        display: flex;
+        justify-content: center;
+    }
+
+    .share_choice_btn_border button{
+        border: 1px solid #3d5589;
+        margin-left: 20px;
+    }
+
+    .share_choice_btn_border h4{
+        font-family: 'TitlingGothicFB Comp Bold';
+        font-size: 22px;
+        text-transform: uppercase;
+        margin: 13px 0px 0 0;
+        color: #fff;
+    }
+
+    .comment_modal .modal-dialog {
+        max-width: 1008px !important;
+    }
+
+    .comment_modal .top_arrow {
+        left: 11%;
+    }
+
+    .candidate_th_card ul li p {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .candidate_th_card ul li img {
+        width: 15px;
+    }
+
+    .candidate_th_card ul li .h6 {
+        font-size: 12px;
+    }
+
+    .comment_header_name {
+        text-align: right;
+        margin: 10px 0 0 0;
+    }
+
+    .comment_header .comment_header_name h1 {
+        color: #43669e;
+    }
+
+    .comment_header .comment_header_img {
+        width: 90px;
+    }
+
+    .candidate_table table tbody tr td h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .form_heading {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    #candidate_search_section {
+        height: auto !important;
+    }
+}
+
+/* ==== Show content on mobile ==== */
+
+@media screen and (max-width: 768px) {
+
+    .c-hide-d{
+        display: none;
+    }
+
+    .district_images a img{
+        width: 90%;
+    }
+
+    .p-0px{
+        padding: 0;
+    }
+
+    .compare_btn{
+        width: 100%;
+    }
+
+    .candidate_info > span.higlight .tick{
+        right: 0;
+        bottom: 0;
+    }
+
+    .candidate_details_left{
+        width: 30%;
+    }
+
+    .candidate_details_right{
+        width: 70%;
+    }
+
+    .burger_icon{
+        left: 15px;
+    }
+
+    .back_btn_style{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .body_content h1 {
+        font-size: 30px;
+    }
+}

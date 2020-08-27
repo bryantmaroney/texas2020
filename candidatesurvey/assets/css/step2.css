@@ -1,0 +1,202 @@
+
+@media (max-height: 1440px) and (min-height: 900px) { 
+	.mainLogoSection {
+	    padding-top: 3%;
+	}
+	.bodyTitle {
+	    margin-top: 25px;
+	    font-size: 2.6vw;
+	}
+	.candidateDataSection > div input {
+    	height: 35px;
+    }
+    .offices > div {
+	    height: 35px;
+	}
+	.enterDistrict input {
+    	height: 35px;
+	}
+	.mainLogoSection img {
+	    width: 50%;
+	}
+	.formButtonSection form {
+    	width: 120px;
+    	height: 120px;
+    	min-height: 100px
+	}
+	.dropzone .dz-preview .dz-image {
+		width: 120px !important;
+    	height: 120px !important;
+	}
+	.dz-message {
+		font-size: 13px;
+	}
+	.dropPhoto {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	.photoSection {
+    	height: 160px;
+	}
+	.sponsored_by_text {
+	    font-size: 22px;
+	}
+	.step1_sbm_btn {
+    	font-size: 17px;
+	}
+	.mt2rem {
+	    margin-top: 1.2rem !important;
+	}
+}
+@media (max-height: 1680px) and (min-height: 1050px) { 
+
+	.candidateDataSection > div input {
+    	height: 45px;
+    }
+    .offices > div {
+	    height: 45px;
+	}
+	.enterDistrict input {
+    	height: 45px;
+	}
+	.formButtonSection form {
+    	width: 150px;
+    	height: 150px;
+    	min-height: 100px
+	}
+	.dropzone .dz-preview .dz-image {
+		width: 150px !important;
+    	height: 520px !important;
+	}
+	.photoSection {
+    	height: 200px;
+	}
+	
+}
+@media (max-height: 2560px) and (min-height: 1440px) { 
+
+	.candidateDataSection > div input {
+    	height: 60px;
+    	font-size: 20px;
+    }
+    .offices > div {
+	    height: 60px;
+	    font-size: 20px;
+	}
+	.enterDistrict input {
+    	height: 60px;
+    	font-size: 20px;
+	}
+	.formButtonSection form {
+    	width: 200px;
+    	height: 200px;
+    	min-height: 100px
+	}
+	.dropzone .dz-preview .dz-image {
+		width: 200px !important;
+    	height: 200px !important;
+	}
+	.photoSection {
+    	height: 200px;
+	}
+	.offices > div > .officeOption {
+    	width: 30px;
+    	height: 30px;
+	}
+	.dz-message {
+		font-size: 23px;
+	}
+	.photoSection {
+    	height: 280px;
+	}
+	.sponsored_by_text {
+	    font-size: 40px;
+	}
+	.step1_sbm_btn {
+	    font-size: 33px;
+	}
+	.mt2rem {
+	    margin-top: 3rem !important;
+	}
+	.btn_stlye {
+    	padding: 10px 40px !important;
+	}
+}
+
+@media (max-height: 1600px) and (min-height: 1440px) { 
+	.step1ItemsContainer {
+	    width: 75%;
+	}
+	.mainLogoSection img {
+	    width: 55%;
+	}
+	.bodyTitle {
+    	font-size: 3.5vw;
+	}
+	.candidateDataSection > div input {
+    	height: 70px;
+    	font-size: 25px;
+    }
+    .offices > div {
+	    height: 70px;
+	    font-size: 25px;
+	}
+	.enterDistrict input {
+    	height: 70px;
+	}
+	.offices > div > .officeOption {
+	    width: 40px;
+	    height: 40px;
+	    font-size: 25px;
+	}
+	.candidateDataSection > div span {
+	    font-size: 1.5vw;
+	}
+	.selectOfficeSection > p {
+	    font-size: 1.5vw;
+	}
+	.enterDistrict span {
+	    font-size: 1.5vw;
+	}
+	.dropPhoto > span {
+	    font-size: 1.5vw;
+	}
+	.btn_stlye {
+	    padding: 12px 43px !important;
+	}
+	
+}
+
+@media (max-height: 1200px) and (min-height: 900px) {
+	.step1ItemsContainer {
+    	width: 65%;
+	}
+	.candidateDataSection > div input {
+	    height: 45px;
+	}
+	.offices > div {
+	    height: 45px;
+	}
+	.enterDistrict input {
+	    height: 45px;
+	}
+	.candidateDataSection > div span {
+	    font-size: 1.3vw;
+	}
+	.selectOfficeSection > p {
+	    font-size: 1.3vw;
+	}
+	.enterDistrict span {
+	    font-size: 1.3vw;
+	}
+	.dropPhoto > span {
+	    font-size: 1.3vw;
+	}
+	.mt2rem {
+	    margin-top: 2.2rem !important;
+	}
+	.btn_stlye {
+    	padding: 10px 30px !important;
+	}
+} 

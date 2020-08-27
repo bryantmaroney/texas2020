@@ -1,0 +1,756 @@
+.wrapper{
+  width:100%;
+  /* position:relative; */
+  margin: 0 auto;
+  background-color: #263F76;
+}
+
+/**
+ * Padding is set relative to the width
+ * of the element, so here padding-top:60% is
+ * a percentage of the width. This allows us 
+ * to set the height as a ratio of the width
+ *
+ */
+.carousel{
+  width: 100%;
+  position: relative;
+  /*height: 100vh;*/
+    height: 1000px;
+  /*padding-top: 60%;*/
+  overflow: hidden;
+}
+.swipeNotification {
+  display: none;
+}
+
+.inner{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+/**
+ * ==========================
+ * Animation styles
+ * 
+ * Notes:
+ * 1. We use z-index to position active slides in-front 
+ * of non-active slides
+ * 2. We set right:0 and left:0 on .slide to provide us with
+ * a default positioning on both sides of the slide. This allows 
+ * us to trigger JS and CSS3 animations easily
+ *
+ */
+.slide{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  z-index: 1;
+  opacity: 0;
+  flex-direction: column;
+}
+
+.slide.active,
+.slide.left,
+.slide.right{
+  z-index: 2;
+  opacity: 1;
+}
+
+/**
+ * ==========================
+ * JS animation styles
+ * 
+ * We use jQuery.animate to control the sliding animations
+ * when CSS3 animations are not available. In order for
+ * the next slide to slide in from the right, we need
+ * to change the left:0 property of the slide to left:auto
+ *
+ */
+
+.js-reset-left{left:auto}
+
+/**
+ * ==========================
+ * CSS animation styles
+ * 
+ * .slide.left and .slide.right set-up
+ * the to-be-animated slide so that it can slide
+ * into view. For example, a slide that is about 
+ * to slide in from the right will:
+ * 1. Be positioned to the right of the viewport (right:-100%)
+ * 2. Slide in when the style is superseded with a more specific style (right:0%)
+ *
+ */
+.slide.left{
+  left:-100%;
+  right:0;
+}
+
+.slide.right{
+  right:-100%;
+  left: auto;
+}
+
+.transition .slide.left{left:0%}
+.transition .slide.right{right:0%}
+
+/**
+ * The following classes slide the previously active
+ * slide out of view before positioning behind the 
+ * currently active slide
+ *
+ */
+.transition .slide.shift-right{right: 100%;left:auto}
+.transition .slide.shift-left{left: 100%;right:auto}
+
+/**
+ * This sets the CSS properties that will animate. We set the
+ * transition-duration property dynamically via JS.
+ * We use the browser's default transition-timing-function
+ * for simplicity's sake
+ * 
+ * It is important to note that we are using CodePen's inbuilt
+ * CSS3 property prefixer. For your own projects, you will need
+ * to prefix the transition and transform properties here to ensure
+ * reliable support across browsers
+ *
+ */
+.transition .slide{
+  transition-property: right, left, margin;
+}
+
+/**
+ * ==========================
+ * Indicators
+ *
+ */
+.indicators{
+    width: 100%;
+    position: absolute;
+    bottom: 225px;
+    z-index: 4000;
+    padding: 0;
+    text-align: center;
+}
+
+.indicators li{
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin: 5px;
+  background: #fff;
+  list-style-type: none;
+  border-radius: 50%;
+  cursor:pointer;
+  transition:background 0.3s ease-out;
+}
+
+.indicators li.active{background:white !important}
+
+/**
+ * ==========================
+ * Arrows 
+ *
+ */
+.arrow{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  border-top: 10px solid #7986AA;
+  border-right: 10px solid #7986AA;
+  cursor: pointer;
+  transition: border-color 0.3s ease-out;
+  z-index: 10000;
+}
+
+.arrow-left{
+  left:20px;
+  transform:rotate(225deg);
+}
+
+.arrow-right{
+  right:20px;
+  transform:rotate(45deg);
+}
+
+/**
+ * ==========================
+ * For demo purposes only
+ * 
+ * Please note that the styles below are used
+ * for the purposes of this demo only. There is no need
+ * to use these in any of your own projects
+ *
+ */
+.slide{
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*flips*/
+@font-face {
+  font-family: Anton;
+  src: url('../fonts/Anton-Regular.ttf');
+}
+@font-face {
+  font-family: LatoItalic;
+  src: url('../fonts/Lato-Italic.ttf');
+}
+@font-face {
+  font-family: TitlingGothicFBCompBlack;
+  src: url('../fonts/TitlingGothicFBComp-Black.otf');
+}
+@font-face {
+  font-family: TitlingGothicFBWideBold;
+  src: url('../fonts/mermshar.ttf');
+}
+i {
+  font-family: LatoItalic !important;
+}
+.fp-tableCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fp-slidesNav.fp-bottom {
+    bottom: 17px;
+    display: flex;
+    justify-content: center;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #8F9CBF;
+}
+.cart {
+  width: 80%;
+  height: 375px;
+  /*border: 8px solid #8F9CBF;*/
+  display: flex;
+  justify-content: space-between;
+}
+.nextArrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    margin: auto; 
+    z-index: 10;
+    object-fit: contain;
+    cursor: pointer;
+}
+.prevArrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    margin: auto;
+    z-index: 10;
+    object-fit: contain;
+    cursor: pointer;
+}
+.fp-prev, .fp-next {
+  display: none;
+}
+.sliderTitle {
+    width: 100%;
+    height: 28vh;
+    position: absolute;
+    top: -20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sliderTitle img {
+  object-fit: contain;
+  width:45%;
+}
+.sliderTitle p:nth-child(1) {
+  font-family: Anton;
+  color: #FFFFFF;
+  font-size: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.sliderTitle p:nth-child(1) span {
+    width: 80px !important;
+    height: 5px;
+    border-top: 1px solid #7187B4;
+    border-bottom: 1px solid #7187B4;
+}
+.sliderTitle p:nth-child(2),.sliderTitle p:nth-child(3), .sliderTitle p:nth-child(4) {
+  font-family: LatoItalic;
+  color: white;
+  font-size: 24px;
+  margin-top: 0;
+}
+.sliderTitle p:nth-child(2) {
+  /*margin-bottom: 5px;*/
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 27px;
+    /* font-family: Lato !important; */
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.cart > div {
+  width: 48.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #1A2E5A;
+  border-radius: 30px;
+
+}
+/*flip*/
+
+.flipContainer {
+  width: 100%;
+  height: auto;
+  background-color: #1E3269;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0 0;
+  box-sizing: border-box;
+}
+.flipCard {
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;  
+}
+.flipText {
+  height: 60%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  min-height: 250px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.flipText b {
+  font-weight: 900;
+}
+.flipImage {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flipImage img {
+  object-fit: contain;
+  width: 50%;
+}
+.flipTextTitle {
+  color: #ED3749;
+  font-size: 31px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  font-family: Anton !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.flipTextBody {
+  color: #203977;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-family: Lato;
+  margin-top: 0;
+}
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 170px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; 
+  color: #263F76;
+}
+
+.hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: -165px;
+  z-index: 1;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: #263F76;
+    transform: rotateY(180deg);
+    /*height: 500px;*/
+    position: relative;
+    margin: 0;
+    border-radius: 10px;
+}
+.flip-card-back-z-index {
+  z-index: 10;
+}
+
+.flip-card-back-textdivs{
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    justify-content: space-between;
+}
+.flip-card-text-div-left{
+  text-align: left;
+  padding: 40px 0px 0px 0px;
+  width: 48%;
+}
+.flip-card-text-div-left>p{
+  font-size: 16px;
+  color: black;
+}
+.flip-card-text-div-right{
+  text-align: left;
+  padding: 40px 0px 0px 0px;
+  width: 48%;
+}
+.flip-card-text-div-right>p{
+  font-size: 16px;
+  color: black;
+}
+.back-top-button-desc{
+    position: absolute;
+    color: #98a0b2;
+    right: 0;
+    top: 36px;
+    font-size: 13px;
+    right: 22px;
+}
+.back-top-button{
+  width: 25px;
+  background: white;
+  padding: 3px;
+  border-radius: 50%;
+  border: 4px solid #dde1e9;
+  position: relative;
+  float: right;
+  margin: 37px 135px 0px 0px;
+}
+.back-top-button>img{
+  width: auto !important;
+  padding: 5px;
+}
+
+.flip-card-back-img{
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.flip-card-back-img>img{
+  /*width: 70% !important;*/
+  width: auto !important;
+  height: auto;
+  margin:  0 auto;
+}
+.flip-card-back-top{
+  background: #eef2f9;
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+}
+.flip-card-background{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+.flipFrontTitle {
+  font-size: 29px;
+  margin-bottom: 1rem;
+  font-family: Anton !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.flipFrontBody {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.cardBold {
+    font-weight: 700 !important;
+    font-family: titling-gothic-fb-compressed;
+    font-size: 2vw;
+}
+.cardBolder {
+    /*font-family: TitlingGothicFBCompBlack;*/
+    font-family: titling-gothic-fb-narrow;
+    /*font-size: 30px;*/
+    font-size: 2vw;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+.cardBolderWide {
+    font-family: titling-gothic-fb-wide;
+    /* font-size: 30px; */
+    font-size: 2.1vw;
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin: 0 10px 3px;
+}
+.cardNormal {
+    font-family: titling-gothic-fb-narrow;
+    /*font-size: 35px;*/
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 2.15vw;
+    margin: 0 10px;
+} 
+.flipArrow {
+  display: flex;
+  align-items: center;
+}
+.arroText i {
+  color: #86C9FF;
+  font-size: 15px;
+  font-family: font-family: LatoItalic;
+}
+.videoCover {
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  background-color: #1A2E5A;
+  display: flex;
+  justify-content: center;
+}
+.videoContainer video {
+    width: 90%;
+    height: 60%;
+    outline: none;
+}
+.videoTitle {
+  position: absolute;
+    right: 40px;
+    top: -30px;
+    font-family: LatoItalic;
+    font-weight: 600;
+    color: #CAD8FC;
+    font-size: 24px;
+    text-align: center;
+}
+.coverImage {
+  position: absolute;
+  left: 50px;
+  object-fit:contain;
+}
+.videoTitle p:nth-child(1) {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.videoTitle p:nth-child(2) {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.videoPlay {
+  position: absolute;
+    top: 65px;
+    right: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.videoPlay img {
+  position: relative;
+  left: 0;
+  object-fit:contain;
+} 
+.videoPlay p {
+  position: relative;
+  margin-top: 5px;
+  color: #C7D6FB;
+  font-size: 16px;
+  font-family: LatoItalic;
+}
+.playVideo{
+    z-index: 9999999;
+}
+.fixedCover {
+  width: 528px;
+  height: 100%;
+  position: relative;
+}
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 100;
+  display: none;
+}
+.modalContainer {
+  width: 80%;
+  max-width: 600px;
+  height: 600px;
+  background-color: white;
+  border-radius: 25px;
+  border: 6px solid #000102;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.solutions10Container > div:nth-child(1) img {
+	width: 80%;
+}
+
+
+
+
+#transition {
+    background:transparent;
+    display:none;
+    position:absolute; top:50%; left:50%; z-index:50;
+	width: 555px;
+	height: 375px;
+	margin: auto
+}
+#transition > div {
+	/* background: #1A2E5A; */
+	background: linear-gradient(to bottom, #263F76 0%, #1A2E5A 100%);
+	border-radius: 30px;
+	width: 100%;
+    height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.closeContainer {
+   text-align: right;
+    padding-top: 13px;
+    padding-right: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000000;
+}
+.closeModal {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: tahoma;
+  cursor: pointer;
+}
+.closeModal {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: tahoma;
+  cursor: pointer;
+}
+.videoIframe {
+	border: none;
+}
+.videoMobileModal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: none;
+    z-index: 10000000;
+}
+.videoMobileModal .videoMobileModalContainer {
+    width: 95%;
+    height: 650px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.videoModal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: none;
+    z-index: 10000000;
+}
+.videoModal .videoModalContainer {
+    width: 95%;
+    height: 650px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 650px;
+}
+.flipVote {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.flipText {
+	position: relative;
+  height: 500px;
+  border-radius: 10px;
+}
+.flipArrow img {
+	width: 50px;
+}

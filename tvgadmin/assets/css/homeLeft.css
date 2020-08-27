@@ -1,0 +1,1049 @@
+@font-face {
+
+    font-family: 'gizasevenseven';
+
+    src: url('../fonts/giza_sevenseven_regular-webfont.woff2') format('woff2'),
+
+         url('../fonts/giza_sevenseven_regular-webfont.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+.left-col-container{
+
+  width: 50%;
+
+  height: 100%;
+
+  position: relative;
+
+}
+
+.home-icon{
+
+	position: absolute;
+
+	left: 30px;
+
+    top: 22px;
+
+    z-index: 100;
+
+    cursor: pointer;
+
+}
+
+.left-col{
+
+  /*display: inherit;*/
+	width: 100%;
+
+	height: 100%;
+
+	/*position: absolute;
+
+	top: 0;
+
+	left: 0;*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.left-col-bg {
+
+    width: 100%;
+
+    height: 100%;
+
+	background: url(../images/left-banner.jpg) no-repeat top center;
+
+	background-size: cover;
+
+	position: relative;
+
+}
+
+.left-col-bg::after {
+
+	content: "";
+
+	background: rgba(9, 32, 64, .82);
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+
+
+.btm-logos {
+
+	z-index: 1;
+
+	text-align: center;
+
+	/*position: absolute;*/
+
+/*	height: 20%;
+
+	bottom: 0;*/
+
+	width: 100%;
+
+	display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.btm-logos ul {
+
+	padding: 0;
+
+}
+
+.btm-logos li {
+
+	display: inline-block;
+
+	padding: 30px 20px 40px;
+
+}
+
+
+
+.texas-head-logo{
+
+	display: flex;
+
+  justify-content: center;
+
+  align-items: flex-end;
+
+  /*margin-top: 7vw;*/
+
+	width: 100%;
+
+	height: 43%;
+
+
+
+}
+
+.texas-head-logo a {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.selection-options{
+
+	width: 100%;
+
+	height: 31%;
+
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: center;
+
+	align-items: center;
+
+}
+.selection-options > div {
+  height: 60px;
+}
+
+.candidates-2020{
+
+	width: 48%;
+
+	border-radius: 6px;
+
+	height: 20%;
+
+	margin: 5px;
+
+	display: flex;
+
+	background: white;
+
+}
+
+.problem-solutions{
+
+	width: 48%;
+
+	border-radius: 6px;
+
+	height: 20%;
+
+	margin: 5px;
+
+	display: flex;
+
+}
+
+
+
+.voter-poll {
+
+	width: 48%;
+
+	border-radius: 6px;
+
+	height: 20%;
+
+	margin: 5px;
+
+	display: flex;
+
+	background: white;
+
+}
+
+.poll-results{
+
+	width: 48%;
+
+	border-radius: 6px;
+
+	height: 20%;
+
+	margin: 5px;
+
+	display: flex;
+
+	background: white;
+
+}
+
+
+
+.icon-side{
+
+	display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: white;
+
+	width: 17%;
+
+	height: 100%;
+
+	border-radius: 4px 0px 0px 4px;
+
+}
+
+.text-side:visited{
+
+  color: white;
+
+}
+
+
+
+.text-side{
+
+	background: #C1080D;
+
+	width: 83%;
+
+	/*height: 100%;*/
+
+	display: flex;
+
+	align-items: center;
+
+  border-radius: 0px 5px 5px 0px;
+
+  padding: 0 12px;
+
+  color: white;
+
+  font-weight: bold;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+}
+
+.on-text{
+
+	width: 80%;
+
+}
+
+.on-icon{
+
+	width: 20%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.on-icon > i {
+
+    width: 17px;
+
+    height: 17px;
+
+    border-radius: 50%;
+
+    padding: 2px 0 0 2px;
+
+    font-size: 12px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: red;
+
+    background: white;
+
+}
+
+
+
+
+
+/**** language content ****/
+
+.language-content{
+
+    position: absolute;
+
+    left: 65px;
+
+    top: 20px;
+
+    z-index: 100;
+
+}
+
+
+
+.can-toggle {
+
+  position: relative;
+
+}
+
+.can-toggle *, .can-toggle *:before, .can-toggle *:after {
+
+  box-sizing: border-box;
+
+}
+
+.can-toggle input[type="checkbox"] {
+
+  opacity: 0;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+}
+
+.can-toggle input[type="checkbox"][disabled] ~ label {
+
+  pointer-events: none;
+
+}
+
+.can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+
+  opacity: 0.4;
+
+}
+
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+
+  content: attr(data-unchecked);
+
+  left: 0;
+
+}
+
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+
+  content: attr(data-checked);
+
+}
+
+.can-toggle label {
+
+  -webkit-user-select: none;
+
+     -moz-user-select: none;
+
+      -ms-user-select: none;
+
+          user-select: none;
+
+  position: relative;
+
+  display: -webkit-box;
+
+  display: flex;
+
+  -webkit-box-align: center;
+
+          align-items: center;
+
+}
+
+
+
+.can-toggle label .can-toggle__switch {
+
+  position: relative;
+
+  border: 1px solid black;
+
+}
+
+.can-toggle label .can-toggle__switch:before {
+
+  content: attr(data-checked);
+
+  position: absolute;
+
+  top: 0;
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+}
+
+.can-toggle label .can-toggle__switch:after {
+
+  content: attr(data-unchecked);
+
+  position: absolute;
+
+  z-index: 5;
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+  background: #C30100;
+
+  -webkit-transform: translate3d(0, 0, 0);
+
+          transform: translate3d(0, 0, 0);
+
+}
+
+.can-toggle input[type="checkbox"][disabled] ~ label {
+
+  color: rgba(119, 119, 119, 0.5);
+
+}
+
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch {
+
+  background-color: white;
+
+}
+
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch {
+
+  background-color: white;
+
+}
+
+.can-toggle label .can-toggle__switch {
+
+  cursor: pointer;
+
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+  transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+  background: white;
+
+}
+
+.can-toggle label .can-toggle__switch:before {
+
+  color: black;
+
+  font-weight: bold;
+
+}
+
+.can-toggle label .can-toggle__switch:after {
+
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+  transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+  color: white;
+
+  font-weight: bold;
+
+}
+
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+
+}
+
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+
+  -webkit-transform: translate3d(65px, 0, 0);
+
+          transform: translate3d(65px, 0, 0);
+
+}
+
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+
+}
+
+.can-toggle label {
+
+  font-size: 14px;
+
+}
+
+.can-toggle label .can-toggle__switch {
+
+  height: 30px;
+
+  -webkit-box-flex: 0;
+
+          flex: 0 0 134px;
+
+  border-radius: 4px;
+
+}
+
+.can-toggle label .can-toggle__switch:before {
+
+  left: 67px;
+
+  font-size: 12px;
+
+  line-height: 27px;
+
+  width: 67px;
+
+  padding: 0 12px;
+
+}
+
+.can-toggle label .can-toggle__switch:after {
+
+  top: 2px;
+
+  left: 2px;
+
+  border-radius: 2px;
+
+  width: 65px;
+
+  line-height: 24px;
+
+  font-size: 12px;
+
+}
+
+.can-toggle label .can-toggle__switch:hover:after {
+
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.can-toggle.can-toggle--size-large input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-large input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.can-toggle.can-toggle--size-large input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+
+  -webkit-transform: translate3d(78px, 0, 0);
+
+          transform: translate3d(78px, 0, 0);
+
+}
+
+.can-toggle.can-toggle--size-large input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-large input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.can-toggle.can-toggle--size-large label {
+
+  font-size: 14px;
+
+  border-radius: 50px;
+
+}
+
+.can-toggle.can-toggle--size-large label .can-toggle__switch {
+
+  height: 29px;
+
+  border-radius: 50px;
+
+  -webkit-box-flex: 0;
+
+          flex: 0 0 163px;
+
+}
+
+.can-toggle.can-toggle--size-large label .can-toggle__switch:before {
+
+  left: 80px;
+
+  font-size: 13px;
+
+/*   line-height: 50px; */
+
+  width: 80px;
+
+  padding: 0 12px;
+
+}
+
+.can-toggle.can-toggle--size-large label .can-toggle__switch:after {
+
+  top: 2px;
+
+  left: 2px;
+
+  border-radius: 50px;
+
+  width: 78px;
+
+/*   line-height: 46px; */
+
+  font-size: 13px;
+
+}
+
+.can-toggle.can-toggle--size-large label .can-toggle__switch:hover:after {
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+/**** language content ****/
+
+.texas-txt {
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+.new-y-title {
+
+  font-size: 124px;
+
+  color: #c1080d;
+
+  line-height: 124px;
+
+}
+
+.left-main-in {
+
+  position: relative;
+
+}
+
+.main-title {
+
+    font-size: 62px;
+
+    line-height: 15px;
+
+    letter-spacing: 3px;
+
+    color: #fff;
+
+    display: inline-block;
+
+}
+
+.left-txt {
+
+    position: relative;
+
+    z-index: 1;
+
+    color: #fff;
+
+    max-width: 434px;
+
+    font-family: gizasevenseven;
+
+    text-align: center;
+
+}
+
+.contuctSection {
+
+  text-align: center;
+
+  color: #E7E9EE;
+
+  font-size: 13px;
+
+}
+
+.contuctSection span {
+
+  margin-right: 20px;
+
+  cursor: pointer;
+
+}
+
+
+
+.new_left_buttons_section {
+
+  position: relative;
+
+  z-index: 1;
+
+  vertical-align: middle;
+
+  margin-top: 5rem;
+  display: inline-block;
+
+}
+/*.new_left_buttons_section .inner-right > div {
+  display: flex;
+  align-items: center;
+}*/
+
+
+
+/*.auto_height {
+
+  height: auto !important;
+
+}*/
+
+.pb2rem {
+
+  padding-bottom: 2rem;
+
+}
+
+.relative_pos {
+
+  position: relative;
+
+}
+
+
+
+@media (max-width: 1278px) {
+
+    .selection-options .candidates-2020 {
+
+        width: 55%;
+
+    }
+
+    .selection-options .problem-solutions {
+
+        width: 55%;
+
+    }
+
+    .selection-options .voter-poll {
+
+        width: 55%;
+
+    }
+
+    .selection-options .poll-results {
+
+        width: 55%;
+
+    }
+
+    .btm-logos {
+
+        margin-top: 0px;
+
+    }
+
+    .btm-logos li {
+
+        padding-bottom: 0px;
+
+        padding-top: 0px;
+
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .selection-options .candidates-2020 {
+
+        width: 70%;
+
+    }
+
+    .selection-options .problem-solutions {
+
+        width: 70%;
+
+    }
+
+    .selection-options .voter-poll {
+
+        width: 70%;
+
+    }
+
+    .selection-options .poll-results {
+
+        width: 70%;
+
+    }
+
+    .texas-head-logo {
+
+        height: 38%;
+
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media (max-width: 860px) {
+
+    .selection-options .candidates-2020 {
+
+        width: 85%;
+
+    }
+
+    .selection-options .problem-solutions {
+
+        width: 85%;
+
+    }
+
+    .selection-options .voter-poll {
+
+        width: 85%;
+
+    }
+
+    .selection-options .poll-results {
+
+        width: 85%;
+
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+
+  .main-page {
+    /*flex-direction: column;*/
+  }
+  .left-col-container {
+    width: 100%;
+  }
+  .right-col {
+  	width: 100%;
+    /*padding-top: 25px;*/
+    display: flex;
+  }
+/*  .dinamic_us_senate {
+    display: flex !important;
+  }
+  .dinamic_us_house {
+    display: flex !important;
+  }
+  .dinamic_tx_house {
+    display: flex !important;
+  }
+  .dinamic_tx_senate {
+    display: flex !important;
+  }*/
+  .SenateContainer .logo {
+    width: 65%;
+  }
+
+
+@media screen and (max-width: 760px) {
+  .left-col-container {
+	height: 800px;
+   }
+
+}
+
+
+
+}
+
+@media (max-width: 641px) {
+
+    .texas-head-logo {
+
+        height: 34%;
+
+    }
+
+    .btm-logos {
+
+        margin-top: 25px;
+
+    }
+
+    /*.left-col-container {
+    	height: 800px;
+    }*/
+
+}
+
+@media (max-width: 375px) {
+
+  /*.left-col-container {
+
+    height: 100vh !important;
+
+  }*/
+
+}
+
+@media (max-width: 340px) {
+
+    .texas-head-logo {
+
+        height: 30%;
+
+    }
+
+    .btm-logos {
+
+        height: auto;
+
+    }
+
+    .btm-logos img {
+
+        width: 85%;
+
+    }
+
+    .btm-logos li {
+
+        padding-bottom: 15px;
+
+    }
+
+}
+
+
+
+.selection-options,.texas-head-logo,.contuctSection {
+
+  z-index: 1;
+
+  position: relative;
+
+
+
+}
+
+.btm-logos {
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 30%;
+
+}
+
+/*.left-col-container {
+
+  height: 100vh;
+
+}*/
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

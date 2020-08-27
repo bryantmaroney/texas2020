@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+
+@import url('font-awesome.min.css');
+@import url('bootstrap-4.min.css');
+@import url('owl.carousel.min.css');
+@import url('animate.css');
+@import url('style.css');
+@import url('media.css');
+
+
+/*
+====================================================================
+                          Commom Css Here [Reset] 
+====================================================================*/
+@font-face {
+    font-family: 'gizasevenseven';
+    src: url('../fonts/giza_sevenseven_regular-webfont.woff2') format('woff2'),
+         url('../fonts/giza_sevenseven_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'droid_serifregular';
+    src: url('../fonts/droidserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/droidserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {margin:0px; padding:0px; border:none; outline:none !important; }
+
+body { font-family: 'Lato', sans-serif; font-size:14px; color:#151515; line-height:24px; font-weight:400; background:#f7faff; }
+
+a{ text-decoration:none; cursor:pointer; outline: none; }
+
+a:hover,a:focus,a:visited{text-decoration:none; outline:none; }
+
+h1,h2,h3,h4,h5,h6 {position:relative; font-weight:normal; margin:0px; background:none; line-height:1.4em; color: #000000; }
+
+ul,li{list-style:none; padding:0px; margin:0px; }
+
+img { max-width: 100%; }
+
+a, button {
+    -webkit-transition: all 0.1s ease;                  
+    -moz-transition: all 0.1s ease;                 
+    -o-transition: all 0.1s ease;   
+    -ms-transition: all 0.1s ease;          
+    transition: all 0.1s ease;
+}
+a:hover, button:hover {
+    -webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+       font-size:13px; 
+       line-height:21px;
+    }
+}
+
+

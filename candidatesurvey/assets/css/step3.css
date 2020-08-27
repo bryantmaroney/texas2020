@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Lato, 'San-Serif';
+	overflow-y: auto;
+}
+.step3Container {
+	width: 100%;
+	height: 100%;
+}
+.stCont {
+	width: 86%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 1%;
+}
+.st3Title {
+	font-size: 2.5vw;
+    font-weight: bolder;
+    color: #263F76;
+    text-align: center;
+	margin: 40px 0;
+}
+.agree {
+	color: #2DA207;
+}
+.disagree{
+	color: #C1080D;
+}
+.problemContainer {
+	width: 100%;
+}
+.problemHeader {
+    height: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #263F76;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 7px 15px 0 lightgrey;
+    border: 1px solid #E2E2E2;
+    cursor: pointer;
+}
+.problemNumber {
+	font-weight: 800;
+}
+.problemNumber .number {
+	background: #263F76;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    margin-right: 15px
+}
+.selectedHeader {
+	background: #263F76;
+	color: white;
+	box-shadow: none;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.selectedHeader .number {
+	border: 3px solid white;
+}
+.problemBody {
+	width: 100%;
+	padding: 0 1% 20px 1%;
+	box-sizing: border-box;
+}
+.problemImage {
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.problemImage img {
+	margin: 0 auto;
+	/*width: 40%;*/
+}
+.problemTextSection {
+	width: 100%;
+	margin: 0 0 20px 0;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+    color: #263F76;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.prSol {
+	font-weight: bolder;
+    border-bottom: 1px solid #263F76;
+    margin-bottom: 10px;
+    display: inline-block;
+    height: 26px;
+    font-size: 20px;
+}
+.buttons {
+	display: flex;
+    justify-content: center;
+}
+.buttons .agree {
+    background: #2CA107;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    width: 150px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.buttons .disagree {
+    background: #C30100;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    width: 150px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.buttons .agree:hover {
+	background: #007236;
+}
+.buttons .disagree:hover {
+	background: #8F0000;
+}
+.feelFree {
+	color: #263F76;
+	font-size: 12px;
+	text-align: center;
+	margin: 20px 0;
+}
+.commentSection {
+	width: 100%;
+	text-align: center;
+}
+.commentSection textarea {
+	width: 80%;
+	height: 200px;
+	border: 1px solid #C8C8C8;
+	resize: none;
+	outline: none;
+	padding: 15px;
+	color:  #263F76;
+}
+.submiteSection {
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+}
+.step3Submite {
+	padding: 11px 32px;
+	background: #C1080D;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	color: white;
+	cursor: pointer;
+}
+.hiddenBody {
+	display: none;
+}
+.agreeHover {
+    background: #007236 !important;
+    outline: #49DA00 solid 3px !important;
+    z-index: 1 !important;
+}
+.disAgreeHover {
+    background: #8F0000 !important;
+    outline: #FF0000 solid 3px !important;
+    z-index: 1 !important;
+}
+.selectedAnswerImage {
+    width: 16px;
+    margin-left: 10px;
+}
+@media (max-width: 780px) {
+	.st3Title {
+    	font-size: 20px;
+	}
+	.problemNumber {
+    	font-size: 12px;
+	}
+	.problemNumber .number {
+    	padding: 1px 5px;
+	}
+	.problemHeader img {
+		width: 15px;
+	}
+	.prSol {
+	    height: 20px;
+	    font-size: 15px;
+	}
+	.problemTextSection {
+    	font-size: 15px;
+	}
+}
+@media (max-width: 500px) {
+	.problemTextSection {
+	    font-size: 11px;
+	}
+	.buttons .agree {
+	    font-size: 13px;
+	    width: 120px;
+	    height: 35px;
+	    font-size: 10px;
+	}
+	.buttons .disagree {
+	    font-size: 13px;
+	    width: 120px;
+	    height: 35px;
+	    font-size: 10px;
+	}
+	.selectedAnswerImage {
+    	margin-left: 3px;
+	}
+	.problemImage img {
+		width: 80%;
+	}
+}
+@media (max-width: 350px) {
+	.problemTextSection {
+	    font-size: 10px;
+	}
+}
+.problemTextSection > div {
+	width: 100%;
+}

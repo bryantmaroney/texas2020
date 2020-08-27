@@ -1,0 +1,3326 @@
+
+
+* {
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+body {
+
+	font-family: Lato, 'San-Serif';
+
+}
+
+/********************************************************************************* step 1 */
+#step1Logo {
+	width: 35%;
+    object-fit: contain;
+}
+#step2Logo {
+	width: 25%;
+	object-fit: contain;
+}
+.main_logo_img {
+	object-fit: contain;
+}
+.sponsored_by_text  {
+	margin-bottom: 1rem !important;
+}
+.dz-message {
+	font-size: 17px;
+}
+.logo_section {
+
+	flex-direction: column;
+
+}
+.commentSection textarea {
+	font-family: Lato, 'San-Serif';
+}
+.logo_section div {
+
+	max-width: 700px;
+
+}
+.dz-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.text_style {
+
+	color: #fff;
+
+	font-size: 24px;
+
+	letter-spacing: 1px;
+
+    line-height: 28px;
+
+}
+.mrt0 {
+	margin-top: 0;
+}
+
+.video_section video {
+
+	width: 99%;
+
+	/* max-height: 324px; */
+
+	outline: none !important;
+
+	margin: 0 0.5%;
+
+}
+.videoDiv {
+	width: 380px !important;
+    height: 380px !important;
+}
+
+.sponsored_by_text {
+
+	color: #fff;
+
+	font-size: 36px;
+
+	font-weight: bold;
+
+	letter-spacing: 1px;
+
+}
+
+.video_cover {
+
+	position: absolute;
+
+	width: 100%;
+
+	height: 100%;
+
+	cursor: pointer;
+
+}
+
+.welcome_sbm_btn {
+
+	font-size: 28px;
+
+	padding: 8px 35px;
+
+}
+
+
+
+/********************************************************************************* step 2 */
+
+
+
+.step1Container {
+
+	width: 100%;
+
+	background: #263F76
+
+}
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+	-webkit-appearance: none;
+
+	margin: 0;
+
+}
+
+
+
+input[type=number] {
+
+	-moz-appearance:textfield;
+
+}
+
+.step1ItemsContainer {
+
+	width: 55%;
+
+	height: 100%;
+
+	/*background: green;*/
+
+	margin: 0 auto;
+
+}
+
+.mainLogoSection {
+
+	text-align: center;
+
+	padding-top: 5%;
+
+}
+
+.mainLogoSection img {
+
+	width: 65%;
+
+}
+
+.itemsBody {
+
+	width: 100%;
+
+}
+
+.bodyTitle{
+
+	color: white;
+
+	font-size: 2.9vw;
+
+	margin-top: 3rem;
+
+	letter-spacing: 1px;
+
+	margin-bottom: 2rem;
+
+	text-align: center;
+
+}
+
+.candidateDataSection {
+
+	display: flex;
+
+	justify-content: space-between;
+
+}
+
+.candidateDataSection > div {
+
+	width: 49%;
+
+}
+
+.candidateDataSection > div input {
+
+	width: 100%;
+
+	/*height: 50px;*/
+
+	padding: 8px 10px;
+
+	border: none;
+
+	color: black;
+
+	margin-top: 10px;
+
+	padding-left: 15px;
+
+	box-sizing: border-box;
+
+	font-size: 24px;
+
+	background: #fff;
+
+}
+
+.candidateDataSection > div span{
+
+	color: white;
+
+	letter-spacing: 1px;
+
+	font-size: 24px; 
+
+}
+
+.offices {
+
+	display: flex;
+
+	justify-content: space-between;
+
+}
+
+.offices > div {
+
+	width: 24%;
+
+	height: 50px;
+
+	background: white;
+
+	margin-top: 10px;
+
+	display: flex;
+
+	align-items: center;
+
+	color: #ABA6A6;
+
+	padding-left: 15px;
+
+	box-sizing: border-box;
+
+	cursor: pointer;
+
+	transition: 0.4s;
+
+}
+
+.selectOfficeSection {
+
+	margin-top: 25px;
+
+}
+
+.selectOfficeSection > p {
+
+	color: white;
+
+	font-size: 24px;
+
+	letter-spacing: 1px;
+
+}
+
+.offices > div > .officeOption {
+
+	width: 30px;
+
+	height: 30px;
+
+	border: 2px solid #ABA6A6;
+
+	border-radius: 50%;
+
+	display: flex;
+
+	justify-content: center;
+
+	margin-right: 10px;
+
+	font-size: 24px;
+
+	align-items: center;
+
+}
+
+.offices span {
+
+	font-size: 24px;
+
+}
+
+.offices > div:hover {
+
+	background: #C1080D;
+
+	color: white;
+
+}
+
+.offices > div:hover  .officeOption {
+
+	border: 2px solid white;
+
+}
+
+.enterDistrict span {
+
+	color: white;
+
+	font-size: 24px;
+
+	letter-spacing: 1px;
+
+}
+
+.enterDistrict input {
+
+	/*width: 100%;*/
+	width: 60%;
+	min-width: 260px;
+
+	/*height: 50px;*/
+
+	padding: 8px 10px;
+
+	border: none;
+
+	color: black;
+
+	margin-top: 10px;
+
+	padding-left: 15px;
+
+	box-sizing: border-box;
+
+	font-size: 24px;
+
+	background: #fff;
+
+}
+
+.enterDistrict {
+
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.photoSection {
+
+	width: 100%;
+
+	height: auto;
+
+	margin-top: 2rem;
+
+	position: relative;
+
+	/*display: flex;
+
+	justify-content: flex-start;
+
+	flex-direction: row;*/
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.dropPhoto {
+
+	position: relative;
+
+	margin-top: 0;
+
+	margin-bottom: 2rem;
+
+	/*margin-left: -1rem;*/
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	flex-direction: column;
+
+}
+
+.formButtonSection {
+
+	margin-top: 10px;
+
+}
+
+.formButtonSection form {
+
+	width: 150px;
+
+	height: 150px;
+
+	padding: 10px;
+
+}
+
+.dropPhoto > span {
+
+	color: white;
+
+	font-size: 24px;
+
+	letter-spacing: 1px;
+
+}
+
+.dz-message {
+
+	margin:0 !important;
+
+	color: #B8B4B4
+
+}
+
+.red {
+
+	color: #C1080D;
+
+}
+
+.dropzone .dz-preview .dz-image {
+
+    width: 150px !important;
+
+    height: 150px !important;
+
+}
+
+.dropzone .dz-preview.dz-image-preview {
+
+	background: transparent !important;
+
+    margin: -12px !important;
+
+}
+
+.dropzone .dz-preview .dz-image {
+
+    border-radius: 0 !important;
+
+}
+
+.sponsored_by_text {
+
+    color: #fff;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+.step1_sbm_btn {
+
+    font-size: 28px;
+
+	padding: 8px 35px;
+
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+
+input {
+
+	outline: none !important;
+
+	color: black !important;
+
+}
+
+.disabled_input {
+
+	pointer-events: none;
+
+}
+
+.offices > div {
+
+	cursor: not-allowed;
+
+}
+
+.office_selected {
+
+	background: #C1080D !important;
+
+	color: white !important;
+
+}
+
+.officeOption_selected {
+
+	border: 2px solid white !important;
+
+}
+
+.district_not_required_text {
+
+	color: #C1080D;
+
+	display: none;
+
+	margin-top: 10px; 
+
+}
+
+input.which_district::-webkit-outer-spin-button,
+
+input.which_district::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+.modalManually {
+
+    width: 100%;
+
+    position: absolute;
+
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+
+    z-index: 100;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    position: fixed;
+
+}
+
+
+
+.manuallyContainer {
+
+    width: 65%;
+
+    height: auto;
+
+    background: white;
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    top: 5%;
+
+    margin: auto;
+
+    border-radius: 10px;
+
+    max-width: 950px;
+
+    padding: 15px;
+
+}
+
+.step2Validation {
+
+	text-align: center;
+
+    font-size: 25px;
+
+    margin-bottom: 30px;
+
+    color: #263F76;
+
+}
+
+
+
+/********************************************************************************* step 3 */
+
+
+.selCandImage {
+	display: none;
+}
+.buttons > div {
+	margin-right: 10px;
+}
+.step3Container {
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.stCont {
+
+	width: 95%;
+
+	height: 100%;
+
+	margin: 0 auto;
+
+	overflow: hidden;
+
+	padding: 0 1%;
+	max-width: 1550px;
+
+}
+
+.st3Title {
+
+	font-size: 2.5vw;
+
+    color: #263F76;
+
+    text-align: center;
+
+	margin: 40px 0;
+
+}
+
+.agree {
+
+	color: #2DA207;
+
+}
+
+.disagree{
+
+	color: #C1080D;
+
+}
+
+.problemContainer {
+
+	width: 100%;
+
+}
+
+.problemHeader {
+
+    height: 50px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    color: #263F76;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 2px 7px 15px 0 lightgrey;
+
+    border: 1px solid #E2E2E2;
+
+    cursor: pointer;
+
+}
+
+.problemNumber {
+
+	font-weight: 600;
+
+	letter-spacing: 1px;
+
+	font-size: 18px;
+
+}
+
+.problemNumber .number {
+
+	background: #263F76;
+
+    color: white;
+
+    border-radius: 50%;
+
+    padding: 3px 8px;
+
+    margin-right: 15px
+
+}
+
+.selectedHeader {
+
+	background: #263F76;
+
+	color: white;
+
+	box-shadow: none;
+
+	border-radius: 0;
+
+	margin-bottom: 0;
+
+}
+
+.selectedHeader .number {
+
+	border: 3px solid white;
+
+}
+
+.problemBody {
+
+	width: 100%;
+
+	padding: 0 1% 20px 1%;
+
+	box-sizing: border-box;
+
+}
+
+.problemImage {
+
+	width: 100%;
+
+	text-align: center;
+
+	margin: 10px 0;
+
+}
+
+
+
+.problemImage img {
+
+	margin: 0 auto;
+
+}
+
+.problemTextSection {
+
+	width: 100%;
+
+	margin: 0 0 20px 0;
+
+    color: #263F76;
+
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-gap: 15px;
+
+}
+
+.prSol {
+
+	font-weight: bolder;
+
+    border-bottom: 1px solid #263F76;
+
+    margin-bottom: 10px;
+
+    display: inline-block;
+
+    height: 26px;
+
+    font-size: 20px;
+
+}
+
+.buttons {
+
+	display: flex;
+
+    justify-content: center;
+
+}
+
+.buttons .agree {
+
+    background: #2CA107;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    width: 150px;
+
+    cursor: pointer;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    letter-spacing: 2px;
+
+    /*border-radius: 5px;*/
+
+}
+
+.buttons .disagree {
+
+    background: #C30100;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    width: 150px;
+
+    cursor: pointer;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    letter-spacing: 2px;
+
+    /*border-radius: 5px;*/
+
+}
+.buttons .neither {
+    background: #6D6D6D;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    width: 150px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    /* border-radius: 5px; */
+}
+.buttons .skip {
+    background: #AAAAAA;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    width: 150px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    /* border-radius: 5px; */
+}
+
+.buttons .agree:hover {
+
+	background: #007236;
+
+}
+
+.buttons .disagree:hover {
+
+	background: #8F0000;
+
+}
+
+.buttons .neither:hover {
+
+	background: #565656;
+
+}
+
+.buttons .skip:hover {
+
+	background: #979797;
+
+}
+
+.feelFree {
+
+	color: #263F76;
+
+	font-size: 15px;
+
+	text-align: center;
+
+	margin: 20px 0;
+
+}
+
+.commentSection {
+
+	width: 100%;
+
+	text-align: center;
+
+}
+
+.commentSection textarea {
+
+	width: 60%;
+
+    height: 150px;
+
+	border: 1px solid #C8C8C8;
+
+	resize: none;
+
+	outline: none;
+
+	padding: 15px;
+
+	color:  #263F76;
+
+	font-size: 20px;
+
+}
+
+.submiteSection {
+
+	width: 100%;
+
+	margin-top: 15px;
+
+	text-align: center;
+
+}
+
+.step3Submite {
+
+	font-size: 28px;
+
+	padding: 8px 35px;
+
+	background: #C1080D;
+
+	border: none;
+
+	letter-spacing: 1px;
+
+	color: white;
+
+	cursor: pointer;
+
+	border-radius: 5px;
+
+}
+
+.hiddenBody {
+
+	display: none;
+
+}
+
+.agreeHover {
+
+    background: #007236 !important;
+
+    outline: #49DA00 solid 3px !important;
+
+    z-index: 1 !important;
+
+}
+
+.disAgreeHover {
+
+    background: #8F0000 !important;
+
+    outline: #FF0000 solid 3px !important;
+
+    z-index: 1 !important;
+
+}
+
+.neitherHover {
+
+    background: #565656 !important;
+
+    outline: #ACACAC solid 3px !important;
+
+    z-index: 1 !important;
+
+}
+
+
+.skipHover {
+
+    background: #979797 !important;
+
+    outline: #C7C7C7 solid 3px !important;
+
+    z-index: 1 !important;
+
+}
+
+
+
+
+.selectedAnswerImage {
+
+    width: 16px;
+
+    margin-left: 10px;
+
+}
+
+.problemTextSection > div {
+
+	width: 100%;
+
+}
+
+
+
+/********************************************************************************* step 4 */
+
+
+
+.thankyou_title {
+
+	font-size: 54px;
+
+	color: #fff;
+
+	letter-spacing: 1px;
+
+	margin-bottom: 0;
+
+}
+
+.verify_text {
+
+	color: #fff;
+
+	letter-spacing: 1px;
+
+	font-size: 46px;
+
+	margin-bottom: 0;
+
+}
+
+.enter_email_addr_inp {
+
+	width: 45%;
+
+	background: #fff;
+
+	color: black;
+
+	font-size: 24px;
+
+	border: none !important;
+
+	outline: none !important;
+
+	padding: 8px 10px;
+
+	text-align: center;
+
+
+}
+.enter_email_addr_inp:-webkit-autofill, .enter_email_addr_inp:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #333 !important;
+}
+
+.enter_email_addr_inp::placeholder {
+
+    text-align: center;
+
+    color: #C1080D !important;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+.ev_sbm_btn {
+
+	font-size: 28px;
+
+	padding: 8px 35px;
+
+	border-radius: 5px;
+
+}
+
+.sponsored_by_text {
+
+	color: #fff;
+
+	font-size: 36px;
+
+	font-weight: bold;
+
+	letter-spacing: 1px;
+
+}
+
+
+
+/********************************************************************************* step 5 */
+
+
+
+.thankyou_text {
+
+	font-size: 54px;
+
+	color: #fff;
+
+	letter-spacing: 1px;
+
+}
+
+.verify_email_text {
+
+	font-size: 35px;
+
+	color: #fff;
+
+	margin-bottom: 0;
+
+    letter-spacing: 1px;
+
+    line-height: 36px;
+
+}
+
+.verify_emai_link {
+
+	text-decoration: none !important;
+
+	text-transform: capitalize;
+
+	color: #fff !important;
+
+}
+
+.sponsored_by_text {
+
+	color: #fff;
+
+	font-size: 36px;
+
+	font-weight: bold;
+
+	letter-spacing: 1px;
+
+}
+
+
+
+/*********************************************************************************************** Responsive */
+@media (min-height: 1500px){
+	/*.homeText > p {
+	    line-height: 45px !important;
+	}*/
+}
+
+
+@media (max-height: 1440px) { /* For screen sizes 2560 */
+
+
+
+    .video_and_texts {
+
+        margin-top: 1rem;
+
+    }
+
+    .text_style {
+
+        margin-bottom: 0;
+
+    }
+
+
+
+    .thankyou_text {
+
+        font-size: 40px;
+
+        margin-top: 2rem;
+
+    }
+
+    .thankyou_text:last-child {
+
+        margin-top: 0;
+
+    }
+
+    .verify_email_text {
+
+        font-size: 22px;
+
+    }
+
+	.bodyTitle, .st3Title {
+
+		font-size: 40px;
+
+	}
+
+	
+}
+
+
+
+
+
+@media (max-height: 1080px) { /* For screen sizes 1920 */
+
+
+
+    .main_logo_img {
+
+        width: 50%;
+
+    }
+
+    .logo_section {
+
+        padding-top: 1rem;
+
+        margin-bottom: 1rem;
+
+    }
+
+    .text_style {
+
+        font-size: 22px;
+
+    }
+
+    .sponsored_by_text {
+
+        font-size: 26px;
+
+    }
+
+/*rtgrtgrtgrtg*/
+    .small_logos img {
+
+        width: 6%;
+
+    }
+	.last_sponser_logos img {
+		width: 8%;
+	}
+
+    .welcome_sbm_btn {
+
+        margin-bottom: 1rem;
+
+        font-size: 24px;
+
+    }
+
+    .video_section .relative_pos {
+
+        height: 230px;
+
+    }
+
+
+
+    .thankyou_title {
+
+        font-size: 40px;
+
+    }
+
+    .verify_text {
+
+        font-size: 36px;
+
+    }
+
+    .enter_email_addr_inp {
+
+        font-size: 24px;
+
+    }
+
+    .ev_sbm_btn {
+
+        font-size: 24px;
+
+        margin-bottom: 2rem;
+
+    }
+
+    .sponsored_by_text {
+
+        font-size: 26px;
+
+    }
+
+
+
+    .sponsored_by_text {
+
+        font-size: 26px;
+
+    }
+
+    .thankyou_text {
+
+        font-size: 40px;
+
+    }
+
+    .verify_email_text {
+
+        font-size: 21px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 40px;
+
+	}
+
+	.candidateDataSection > div span, .selectOfficeSection > p, .enterDistrict span, .dropPhoto > span {
+
+		font-size: 22px;
+
+	}
+
+	.candidateDataSection > div input, .enterDistrict input {
+
+		font-size: 24px;
+
+	}
+
+	.offices > div > .officeOption {
+
+		font-size: 24px;
+
+	}
+
+	.offices span {
+
+		font-size: 24px;
+
+	}
+
+	.step1_sbm_btn, .step3Submite {
+
+		font-size: 24px;
+
+	}
+
+}
+
+
+
+@media (max-height: 1050px) { /* For screen sizes 1680 */
+
+
+
+}
+
+
+
+@media (max-height: 900px) { /* For screen sizes 1600, 1440 */
+
+
+
+    .main_logo_img {
+
+        width: 50%;
+
+    }
+
+    .text_style {
+
+        line-height: 22px;
+
+        font-size: 19px;
+
+    }
+
+    .sponsored_by_text {
+
+        margin-bottom: 0;
+
+        font-size: 24px;
+
+    }
+
+    .welcome_sbm_btn {
+
+        font-size: 20px;
+
+    }
+
+    .video_section .relative_pos {
+
+        height: 350px;
+
+    }
+
+
+
+    .thankyou_title {
+
+        font-size: 32px;
+
+    }
+
+    .verify_text {
+
+        font-size: 26px;
+
+    }
+
+    .small_logos img {
+
+        width: 10%;
+
+    }
+
+    .ev_sbm_btn {
+
+        margin-bottom: 1rem;
+
+        font-size: 20px;
+
+    }
+
+    .sponsored_by_text {
+
+        font-size: 24px;
+
+    }
+
+    div:has(> p.thankyou_title) {
+
+        margin-bottom: 1rem;
+
+    }
+
+
+
+    .small_logos img {
+
+        /*width: 15%;*/
+
+    }
+
+    .ev_sbm_btn {
+
+        margin-bottom: 1rem;
+
+        font-size: 22px;
+
+    }
+
+    .sponsored_by_text {
+
+        font-size: 24px;
+
+    }
+
+    .verify_email_text {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 32px;
+
+	}
+
+	.candidateDataSection > div span, .selectOfficeSection > p, .enterDistrict span, .dropPhoto > span {
+
+		font-size: 19px;
+
+	}
+
+	.step1_sbm_btn, .step3Submite {
+
+		font-size: 20px;
+
+	}
+
+}
+
+
+
+@media (max-height: 800px) { /* For screen sizes 1280 */
+
+	
+
+}
+@media (max-height: 700px) { /* For screen sizes 1280 */
+
+	
+}
+
+@media (max-height: 600px) { /* For screen sizes 1280 */
+
+
+}
+
+@media (max-height: 768px) { /* For screen sizes 1366, 1360, 1024 */
+
+
+
+}
+
+
+
+
+
+@media (max-width: 3000px) {
+	/*step1*/
+	.homeText > p {
+    	line-height: 45px;
+    	font-size: 2.2vh !important;
+    	width: 70%;
+	}
+	.startSurvey {
+    	font-size: 30px !important;
+    }
+    .home_page img {
+    	width: 11%;
+    }
+    /*step2*/
+    .formButtonSection form {
+	    width: 200px;
+	    height: 200px;
+	}
+	.dz-message {
+		font-size: 23px;
+	}
+	.dropzone .dz-preview .dz-image {
+	    width: 200px !important;
+	    height: 200px !important;
+	}
+	.offices span {
+    	padding-bottom: 1px;
+	}
+}
+
+@media (max-width: 2500px) {
+	/*step1*/
+	.homeText > p {
+    	line-height: 40px;
+    	font-size: 2.2vh !important;
+    	width: 70%;
+	}
+	.startSurvey {
+    	font-size: 25px !important;
+    }
+    .home_page img {
+    	width: 12%;
+    }
+    /*step2*/
+    .formButtonSection form {
+	    width: 200px;
+	    height: 200px;
+	}
+	.dz-message {
+		font-size: 23px;
+	}
+	.dropzone .dz-preview .dz-image {
+	    width: 200px !important;
+	    height: 200px !important;
+	}
+
+}
+
+@media (max-width: 1920px) {
+	/*step1*/
+	.homeText > p {
+    	line-height: 28px;
+    	font-size: 2.2vh !important;
+	}
+	.startSurvey {
+    	font-size: 20px !important;
+    }
+    .home_page img {
+    	width: 20%;
+    }
+     /*step2*/
+    .formButtonSection form {
+	    width: 150px;
+	    height: 150px;
+	}
+	.dz-message {
+		font-size: 17px;
+	}
+	.dropzone .dz-preview .dz-image {
+	    width: 150px !important;
+	    height: 150px !important;
+	}
+}
+@media (max-width: 1600px) {
+	/*step1*/
+	.homeText > p {
+    	line-height: 27px;
+	    font-size: 2.2vh !important;
+	    width: 75%;
+	}
+	.startSurvey {
+	    font-size: 16px !important;
+	}
+	.videoDiv {
+	    width: 350px !important;
+    	height: 350px !important;
+	}
+	.sponsBy h3 {
+		font-size: 17px;
+	}
+	
+}
+@media (max-width: 1440px) {
+	/*step1*/
+	.homeText > p {
+	    line-height: 25px;
+	    font-size: 2.2vh !important;
+	    width: 75%;
+	}
+	.startSurvey {
+        font-size: 15px !important;
+		padding: 13px 30px !important;
+	}
+	.videoDiv {
+	    width: 330px !important;
+    	height: 330px !important;
+	}
+	.sponsBy h3 {
+	    font-size: 15px;
+	}
+	.home_page img {
+    	width: 25%;
+    }
+	
+	
+}
+@media (max-width: 1366px) {
+
+    .sponsored_by_text {
+
+        font-size: 24px;
+
+    }
+
+    .text_style {
+
+        font-size: 20px;
+
+    }
+
+    .welcome_sbm_btn {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .enter_email_addr_inp {
+
+		width: 60%;
+
+        font-size: 24px;
+
+	}
+
+
+
+	.thankyou_text {
+
+        font-size: 36px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 36px;
+
+	}
+
+	.candidateDataSection > div span, .selectOfficeSection > p, .enterDistrict span, .dropPhoto > span {
+
+		font-size: 20px;
+
+	}
+
+	.candidateDataSection > div input, .enterDistrict input {
+
+		font-size: 24px;
+
+	}
+
+	.offices > div > .officeOption {
+
+		font-size: 24px;
+
+	}
+
+	.offices span {
+
+		font-size: 20px;
+
+	}
+
+
+
+	.step1_sbm_btn, .step3Submite, .ev_sbm_btn {
+
+		font-size: 20px;
+
+	}
+
+	
+	
+
+}
+
+
+
+@media (max-width: 1280px) {
+
+    .text_style {
+
+        font-size: 20px !important;
+
+    }
+
+    .sponsored_by_text {
+
+        font-size: 22px;
+
+    }
+
+    .welcome_sbm_btn {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .enter_email_addr_inp {
+
+        font-size: 22px;
+
+    }
+
+    .sponsored_by_text {
+
+        font-size: 22px;
+
+    }
+
+
+
+    .sponsored_by_text {
+
+        font-size: 22px;
+
+    }
+
+    .thankyou_text {
+
+        font-size: 32px;
+
+    }
+
+    .checkmark_img {
+
+        width: 100px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 32px;
+
+	}
+
+	.candidateDataSection > div span, .selectOfficeSection > p, .enterDistrict span, .dropPhoto > span {
+
+		font-size: 20px;
+
+	}
+
+	.candidateDataSection > div input, .enterDistrict input {
+
+		font-size: 22px;
+
+	}
+
+	.offices > div > .officeOption {
+
+		font-size: 22px;
+
+	}
+
+	.offices span {
+
+		font-size: 18px;
+
+	}
+
+	.step1_sbm_btn, .step3Submite, .ev_sbm_btn {
+
+		font-size: 20px;
+
+	}
+	/*new step1*/
+
+	.homeText > p {
+    	line-height: 25px;
+	    font-size: 2.2vh !important;
+	    width: 77%;
+	}
+	.startSurvey {
+        font-size: 16px !important;
+	}
+	.videoDiv {
+	    width: 300px !important;
+    	height: 300px !important;
+	}
+	.sponsBy h3 {
+	    font-size: 16px;
+	}
+	.home_page img {
+	    width: 25%;
+	}
+	.photoSection {
+    	grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+
+
+@media (max-width: 1150px) {
+
+	.offices > div {
+
+    	font-size: 11px;
+
+	}
+
+	.offices > div > .officeOption {
+
+    	align-items: center;
+
+	}
+
+	.candidateDataSection > div span {
+
+	    font-size: 10px;
+
+	}
+
+	.selectOfficeSection > p {
+
+    	font-size: 10px;
+
+	}
+
+	.dropPhoto > span {
+
+		font-size: 10px;
+
+	}
+
+	.candidateDataSection > div input {
+
+    	font-size: 10px;
+
+	}
+
+
+
+	.offices {
+
+	    display: grid;
+
+	    grid-template-columns: auto auto;
+
+	}
+
+	.offices > div {
+
+    	width: 100%;
+
+    }
+
+    .offices {
+
+	    display: grid;
+
+	    grid-template-columns: 1fr 1fr;
+
+	    grid-column-gap: 10px;
+
+	}
+
+
+
+	.enterDistrict {
+
+		width: 100%;
+
+		justify-content: flex-start;
+
+	}
+
+	.dropPhoto {
+
+		margin-left: 1rem;
+
+	}
+
+	/*new step1*/
+	.homeText > p {
+    	line-height: 25px;
+	    font-size: 2vh !important;
+	    width: 80%;
+	}
+	.startSurvey {
+        font-size: 16px !important;
+	}
+	.videoDiv {
+	    width: 280px !important;
+    	height: 280px !important;
+	}
+	.sponsBy h3 {
+	    font-size: 15px;
+	}
+	.home_page img {
+	    width: 25% !important;
+	}
+	/*step2*/
+	#step2Logo {
+    	width: 30%;
+	}
+}
+
+
+
+@media (max-width: 1141px) {
+
+
+
+   /* .video_section {
+
+        flex-direction: column;
+
+    }
+
+    .video_section div:first-child {
+
+        width: 100%;
+
+    }
+
+    .video_section div:last-child {
+
+        width: 100%;
+
+        margin: 1rem auto;
+
+        height: 350px;
+
+    }*/
+
+    .sponsored_by_text {
+
+        font-size: 20px;
+
+    }
+
+    .welcome_sbm_btn {
+
+        font-size: 18px;
+
+        padding: 6px 25px;
+
+    }
+
+    .small_logos img {
+
+        width: 10%;
+
+    }
+
+    .video_right_texts p:nth-child(2), .video_right_texts p:last-child {
+
+        margin-top: 1rem;
+
+    }
+
+    .text_style {
+
+        font-size: 19px !important;
+
+    }
+
+
+
+    .enter_email_addr_inp {
+
+        font-size: 20px;
+
+    }
+
+    .sponsored_by_text {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .sponsored_by_text {
+
+        font-size: 20px;
+
+    }
+
+    .thankyou_text {
+
+        font-size: 28px;
+
+    }
+
+    .checkmark_img {
+
+        width: 95px;
+
+    }
+
+    .verify_email_text {
+
+        font-size: 18px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 28px;
+
+	}
+
+	.candidateDataSection > div span, .selectOfficeSection > p, .enterDistrict span, .dropPhoto > span {
+
+		font-size: 19px;
+
+	}
+
+	.candidateDataSection > div input, .enterDistrict input {
+
+		font-size: 20px;
+
+	}
+
+	.offices > div > .officeOption {
+
+		font-size: 20px;
+
+	}
+
+	.offices span {
+
+		font-size: 20px;
+
+	}
+
+	.step1_sbm_btn, .step3Submite, .ev_sbm_btn {
+
+		font-size: 18px;
+
+		padding: 6px 25px;
+
+	}
+	/*new step1*/
+	
+
+}
+
+
+
+@media (max-width: 991px) {
+
+	.enter_email_addr_inp {
+
+		width: 80%;
+
+	}
+
+
+
+	.thankyou_text {
+
+        font-size: 24px;
+
+    }
+
+    .checkmark_img {
+
+        width: 90px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 24px;
+
+	}
+
+	/*new step1*/
+	#step1Logo {
+    	width: 40%;
+	}
+	.homeText > p {
+    	line-height: 25px;
+	    font-size: 2vh !important;
+	    width: 80%;
+	}
+	.startSurvey {
+        font-size: 16px !important;
+	}
+	.videoDiv {
+        width: 230px !important;
+    	height: 230px !important;
+	}
+	.sponsBy h3 {
+	    font-size: 13px;
+	}
+	.home_page img {
+	    width: 25% !important;
+	}
+
+
+}
+
+
+
+@media (max-width: 881px) {
+
+
+
+    .main_logo_img {
+
+        width: 50%;
+
+    }
+
+    .sponsored_by_text {
+
+        margin-top: 2rem;
+
+        font-size: 18px;
+
+    }
+
+   /* .video_section .relative_pos {
+
+        margin-top: 2rem;
+
+        margin-bottom: 2rem;
+
+    }*/
+
+    .welcome_sbm_btn {
+
+        font-size: 20px;
+
+        padding: 6px 25px;
+
+    }
+
+    .small_logos img {
+
+        width: 16%;
+
+    }
+
+    .text_style{
+
+        font-size: 18px !important;
+
+    }
+
+
+
+    .thankyou_title {
+
+        font-size: 28px;
+
+    }
+
+    .verify_text {
+
+        font-size: 22px;
+
+    }
+
+    .enter_email_addr_inp {
+
+        font-size: 18px;
+
+    }
+
+    .small_logos img {
+
+        width: 12%;
+
+    }
+
+
+
+    .thankyou_text {
+
+        font-size: 20px;
+
+    }
+
+    .checkmark_img {
+
+        width: 80px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 28px;
+
+	}
+
+	.candidateDataSection > div span, .selectOfficeSection > p, .enterDistrict span, .dropPhoto > span {
+
+		font-size: 18px;
+
+
+	}
+
+	.candidateDataSection > div input, .enterDistrict input {
+
+		font-size: 18px;
+		width: 100%;
+
+	}
+
+	.offices > div > .officeOption {
+
+		font-size: 18px;
+
+	}
+
+	.offices span {
+
+		font-size: 18px;
+
+	}
+
+
+
+	.step1_sbm_btn, .step3Submite, .ev_sbm_btn {
+
+		font-size: 20px;
+
+		padding: 6px 25px;
+
+	}
+
+
+
+	.photoSection {
+
+		justify-content: center;
+
+		flex-direction: column;
+
+	}
+
+	.enterDistrict {
+
+		width: 100%;
+
+	}
+
+	.dropPhoto {
+
+		margin-right: 0;
+
+		margin-top: 1rem;
+
+		margin-bottom: 0;
+
+	}
+
+	.videoDiv {
+		width: 260px !important;
+		height: 260px !important;
+	}
+
+
+	/*new step5*/
+	.resultMessageShow {
+	    font-size: 3vh !important;
+	}
+
+	.messageTitleShow {
+	    font-size: 50px !important;
+	}
+
+	/*new step1*/
+	#step1Logo {
+    	width: 45%;
+	}
+	.homeText > p {
+    	line-height: 24px;
+		font-size: 2.2vh !important;
+	    width: 80%;
+	}
+	.startSurvey {
+        font-size: 16px !important;
+	}
+	.videoDiv {
+        width: 220px !important;
+		height: 220px !important;
+	}
+	
+	.sponsBy h3 {
+	    font-size: 11px;
+	}
+	.home_page img {
+	    width: 25% !important;
+	}
+	/*step2*/
+	#step2Logo {
+    	width: 40%;
+	}
+	.photoSection {
+    	grid-template-columns: 1fr;
+	}
+}
+
+
+
+@media (max-width: 780px) {
+
+	.st3Title {
+
+    	font-size: 20px;
+
+	}
+
+	.problemNumber {
+
+    	font-size: 12px;
+
+	}
+
+	.problemNumber .number {
+
+    	padding: 1px 5px;
+
+	}
+
+	.problemHeader img {
+
+		width: 15px;
+
+	}
+
+	.prSol {
+
+	    height: 20px;
+
+	    font-size: 15px;
+
+	}
+
+	.problemTextSection {
+
+    	font-size: 15px;
+
+	}
+
+	/*new step1*/
+	.surveyHomeContainer {
+		/*flex-direction: column;*/
+		grid-template-columns: auto !important;
+	}
+	.leftContainer {
+    	width: 100% !important;
+    	padding-bottom: 2rem;
+    	box-sizing: border-box;
+    	height: auto !important;
+	}
+	.rightContainer {
+    	width: 100% !important;
+    	padding: 2rem 0;
+    	box-sizing: border-box;
+    	height: auto !important;
+	}
+	.main_logo_img {
+	    width: 80%;
+	}
+	.videoDiv {
+		width: 80% !important;
+	}
+	.sponsBy h3 {
+    	font-size: 10px;
+	}
+	.videoDiv {
+		width: 300px !important;
+		height: 300px !important;
+	}
+	.home_page img {
+	    width: 12% !important;
+	}
+	.sponsBy h3 {
+	    font-size: 13px;
+	}
+
+}
+
+
+
+@media (max-width: 770px) {
+
+	.mainLogoSection img {
+
+	    width: 70%;
+
+	}
+
+	.step1ItemsContainer {
+
+	    width: 80%;
+
+	}
+
+	.offices > div > .officeOption {
+
+    	margin-right: 5px;
+
+	}
+
+	
+	
+
+}
+
+
+
+@media (max-width: 651px) {
+
+
+
+    .text_style {
+
+        font-size: 16px !important;
+
+    }
+
+   /* .video_section {
+
+        margin-top: 2rem;
+
+    }*/
+
+    .welcome_sbm_btn {
+
+        font-size: 16px;
+
+    }
+
+    .sponsored_by_text{
+
+        font-size: 16px;
+
+        margin-top: 1rem;
+
+    }
+
+   /* .video_and_texts {
+
+        margin-top: 1rem;
+
+    }*/
+
+    .small_logos img {
+
+        width: 20%;
+
+    }
+
+
+
+    .thankyou_title {
+
+        font-size: 24px;
+
+    }
+
+    .verify_text {
+
+        font-size: 18px;
+
+    }
+
+    .enter_email_addr_inp {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .sponsored_by_text{
+
+        font-size: 16px;
+
+    }
+
+    .thankyou_text {
+
+        font-size: 18px;
+
+    }
+
+    .verify_email_text {
+		font-size: 16px;
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 25px;
+	}
+
+    .checkmark_img {
+
+        width: 70px;
+
+    }
+
+
+
+    .bodyTitle, .st3Title {
+
+		font-size: 24px;
+
+	}
+
+	.candidateDataSection > div span, .selectOfficeSection > p, .enterDistrict span, .dropPhoto > span {
+
+		font-size: 16px;
+
+	}
+
+	.candidateDataSection > div input, .enterDistrict input {
+
+		font-size: 16px;
+		margin-bottom: 1rem;
+
+	}
+
+	.offices > div > .officeOption {
+
+		font-size: 16px;
+
+	}
+
+	.offices span {
+
+		font-size: 16px;
+
+	}
+
+	.step1_sbm_btn, .step3Submite, .ev_sbm_btn {
+
+		font-size: 16px;
+
+	}
+	
+	/*new step5*/
+	.verCont {
+		justify-content: initial !important;
+		padding-top: 25px;
+	}
+	/*step2*/
+	#step2Logo {
+	    width: 60%;
+	}
+
+	
+}
+
+
+
+@media (max-width: 600px) {
+
+	.candidateDataSection {
+
+	    flex-direction: column;
+
+	}
+
+	.candidateDataSection > div {
+
+	    width: 100%;
+
+	}
+
+	.offices {
+
+	    display: grid;
+
+	    grid-template-columns: auto auto;
+
+	}
+
+	.offices > div {
+
+    	width: 100%;
+
+    }
+
+    .offices {
+
+	    display: grid;
+
+	    grid-template-columns: 1fr 1fr;
+
+	    grid-column-gap: 10px;
+
+	}
+
+	.mainLogoSection img {
+
+	    width: 80%;
+
+	}
+
+	.bodyTitle {
+
+	    margin-top: 25px;
+
+	}
+
+	.step1ItemsContainer {
+
+    	width: 85%;
+
+	}
+
+	.sponsored_by_text {
+
+    	font-size: 22px;
+
+	}
+
+	.mr2rem, .ml2rem {
+
+		width: 20%;
+
+	}
+
+	.btn_stlye {
+
+    	padding: 7px 15px;
+
+    }
+
+	.formButtonSection form {
+
+	    width: 120px;
+
+	    height: 120px;
+
+	    min-height: 100px;
+
+	}
+
+	.dz-message p {
+
+	    font-size: 13px;
+
+	}
+
+	.dropPhoto > span {
+
+	    font-size: 11px;
+
+	}
+
+	.enterDistrict {
+
+		width: 100%;
+
+	}
+	
+	.dropzone .dz-preview .dz-image {
+	    width: 120px !important;
+	    height: 120px !important;
+	}
+
+}
+
+
+
+@media (max-width: 500px) {
+
+	.problemTextSection {
+
+	    font-size: 11px;
+
+	}
+
+	.buttons .agree {
+
+	    font-size: 13px;
+
+	    width: 120px;
+
+	    height: 35px;
+
+	    font-size: 10px;
+
+	}
+
+	.buttons .disagree {
+
+	    font-size: 13px;
+
+	    width: 120px;
+
+	    height: 35px;
+
+	    font-size: 10px;
+
+	}
+
+	.buttons .neither {
+
+	    font-size: 13px;
+
+	    width: 120px;
+
+	    height: 35px;
+
+	    font-size: 10px;
+
+	}
+
+	.buttons .skip {
+
+	    font-size: 13px;
+
+	    width: 120px;
+
+	    height: 35px;
+
+	    font-size: 10px;
+
+	}
+
+	.selectedAnswerImage {
+
+    	margin-left: 3px;
+
+	}
+
+	.problemImage img {
+
+		width: 80%;
+
+	}
+	/*new step1*/
+	.videoDiv {
+		width: 220px !important;
+		height: 220px !important;
+	}
+	.home_page img {
+	    width: 20% !important;
+	}
+
+	#step1Logo {
+	    width: 60% !important;    
+	}
+	.resultCharts {
+    	grid-template-columns: 1fr 1fr !important;
+	}
+	/* .agreeSummaryRight img {
+		margin-right: 0;
+	} */
+
+}
+
+@media (max-width: 450px) {
+
+	.buttons > div {
+		width: 100% !important;
+    	font-size: 3vw !important;
+		margin:0 !important;
+	}
+	.st3Title {
+		margin: 15px 0;
+	}
+
+	.problemHeader {
+    	height: 40px;
+		margin-bottom: 10px;
+	}
+	.buttons {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+	.commentSection textarea {
+    	height: 80px;
+	}
+	.disagreeSummaryRight, .skippedSummaryRight, .agreeSummaryRight, .neitherSummaryRight {
+    	width: 88px !important;
+		font-size: 12px !important;
+	}
+	
+}
+
+
+
+@media (max-width: 350px) {
+
+	.problemTextSection {
+
+	    font-size: 10px;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.surveyHomeContainer {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 65% 35%;
+	color: white;
+	font-weight: 300;
+}
+.leftContainer {
+	width: 100%;
+	height: 100%;
+	background: #263F76;
+}
+.rightContainer {
+	width: 100%;
+	height: 100%;
+	background: #192E5A;
+}
+.homeText {
+	line-height: 25px;
+}
+.homeText > p {
+	font-size: 2vh;
+}
+.startSurvey {
+	border: none;
+	background: #2CA007;
+	font-size: 17px;
+	font-weight: bold;
+	outline: none;
+	padding: 15px 50px;
+	color: white;
+	letter-spacing: 2px;
+	cursor: pointer;
+	transition: 0.4s;
+	margin-bottom: 2rem;
+	border-radius:5px;
+}
+.sponsBy {
+	text-align: center;
+}
+.startSurvey:hover {
+	background: #007236;
+}
+.step1_sbm_btn, .step3Submite, .ev_sbm_btn {
+	transition: 0.4s;
+}
+.step1_sbm_btn:hover {
+	background: #8F0000;
+}
+.step3Submite:hover{
+	background: #8F0000;
+}
+.ev_sbm_btn:hover {
+	background: #8F0000;
+}
+
+
+/*new step5*/
+.verCont{
+	width: 98%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.resultImageShow {
+    width: 100%;
+    text-align: center;
+}
+.messageTitleShow {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #D40D10;
+    font-size: 55px;
+}
+.resultMessageShow {
+    width: 100%;
+    padding: 30px 25% 0px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.resultLogo img {
+    width: 150px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+.dropzone .dz-preview .dz-remove {
+    font-size: 17px !important;
+    color: white;
+}
+
+
+
+
+/*tooltip*/
+.lite-tooltip {
+	width: 250px !important;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #3b4355;
+  color: #fff;
+  font-color: 14px;
+  padding: 1.4rem;
+  border-radius: 3px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  word-break: break-all;
+}
+.lite-tooltip:before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #3b4355 transparent transparent transparent;
+    display: inline-block;
+}
+.lite-tooltip-bottom:before {
+    bottom: auto;
+	top: -6px;
+	left: 41%;
+	transform: translateX(-50%);
+	border-width: 0 6px 6px 6px;
+	border-color: transparent transparent #3b4355 transparent;
+}
+.lite-tooltip-right:before {
+    bottom: auto;
+    left: -6px;
+    top: 41%;
+    transform: translateY(-50%);
+    border-width: 6px 6px 6px 0;
+    border-color: transparent #3b4355 transparent transparent;
+}
+.lite-tooltip-left:before {
+    bottom: auto;
+    left: auto;
+    right: -6px;
+    top: 41%;
+    transform: translateY(-50%);
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent #3b4355;
+}
+
+
+
+.stSummary {
+	width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 1%;
+    max-width: 1550px;
+}
+.resultProblemHeader {
+	height: 50px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    color: #263F76;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 2px 7px 15px 0 lightgrey;
+
+    border: 1px solid #E2E2E2;
+}
+.summaryCount {
+	color: #24407B;
+	font-weight: bolder;
+	padding: 30px 0 0 0;
+}
+.summaryTitle {
+	font-size: 20px;
+	color: #C30101;
+	font-weight: bold;
+	padding: 5px 0 15px 0;
+}
+.disagreeSummaryRight {
+	width: 120px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	color: #C30101;
+	font-size: 15px;
+	font-weight: bolder;
+}
+.disagreeSummaryRight img {
+	margin-right: 10px;
+}
+.agreeSummaryRight {
+	width: 120px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	color: #2CA107;
+	font-size: 15px;
+	font-weight: bolder;
+}
+.agreeSummaryRight img {
+	margin-right: 10px;
+}
+.neitherSummaryRight {
+	width: 120px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	color: #AAAAAA;
+	font-size: 15px;
+	font-weight: bolder;
+}
+.neitherSummaryRight img {
+	margin-right: 10px;
+}
+.skippedSummaryRight {
+	width: 120px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	color: #6D6D6D;
+	font-size: 15px;
+	font-weight: bolder;
+}
+.skippedSummaryRight img {
+	margin-right: 10px;
+}
+.resultCharts {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 15px;
+}
+.resultCharts > div {
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+.resultCharts > div > div:nth-child(2) {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	font-size: 50px;
+	font-weight: 900;
+}
+.resultCharts > div > div:nth-child(3) {
+	display: flex;
+    justify-content: center;
+}
+.resultCharts > div > div:nth-child(3) .agree {
+
+    background: #2CA107;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    width: 150px;
+
+    cursor: pointer;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    letter-spacing: 2px;
+
+    /*border-radius: 5px;*/
+
+}
+
+.resultCharts > div > div:nth-child(3) .disagree {
+
+    background: #C30100;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    width: 150px;
+
+    cursor: pointer;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    letter-spacing: 2px;
+
+    /*border-radius: 5px;*/
+
+}
+.resultCharts > div > div:nth-child(3) .neither {
+    background: #6D6D6D;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    width: 150px;
+    cursor: pointer;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    /* border-radius: 5px; */
+}
+.resultCharts > div > div:nth-child(3) .skip {
+    background: #AAAAAA;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    width: 150px;
+    cursor: pointer;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    /* border-radius: 5px; */
+}
+.submitSummary {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+}
+.submitSummary button {
+	border: none;
+	color: white;
+	font-weight: bold;
+	background: #263F76;
+	font-size: 20px;
+	border-radius: 5px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 1px;
+}
+.submitSummary button:hover {
+	background: #1E315C;
+}
+.step3Message {
+	text-align: center;
+    font-size: 20px;
+    font-family: Lato, 'San-Serif';
+    font-weight: 900;
+	color: #263F76;
+}
+
+

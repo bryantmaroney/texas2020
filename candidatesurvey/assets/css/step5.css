@@ -1,0 +1,171 @@
+
+.logo_section {
+	flex-direction: column;
+}
+.logo_section div {
+	max-width: 700px;
+}
+
+.thankyou_text {
+	font-size: 54px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.verify_email_text {
+	font-size: 35px;
+	color: #fff;
+	margin-bottom: 0;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+.verify_emai_link {
+	text-decoration: none !important;
+	text-transform: capitalize;
+	color: #fff !important;
+}
+.sponsored_by_text {
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/*********************************************************************************************** Responsive */
+
+@media (max-height: 1440px) { /* For screen sizes 2560 */
+    .thankyou_text {
+        font-size: 40px;
+        margin-top: 2rem;
+    }
+    .thankyou_text:last-child {
+        margin-top: 0;
+    }
+    .verify_email_text {
+        font-size: 22px;
+    }
+}
+
+@media (max-height: 1080px) { /* For screen sizes 1920 */
+    .logo_section {
+        margin-bottom: 0;
+    }
+    .main_logo_img {
+        width: 50%;
+    }
+    .sponsored_by_text {
+        font-size: 26px;
+    }
+    .thankyou_text {
+        font-size: 40px;
+    }
+    .verify_email_text {
+        font-size: 21px;
+    }
+}
+
+@media (max-height: 1050px) { /* For screen sizes 1680 */
+    
+}
+
+@media (max-height: 900px) { /* For screen sizes 1600, 1440 */
+    .small_logos img {
+        width: 8%;
+    }
+    .ev_sbm_btn {
+        margin-bottom: 1rem;
+        font-size: 22px;
+    }
+    .sponsored_by_text {
+        font-size: 24px;
+    }
+    .verify_email_text {
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 800px) { /* For screen sizes 1280 */
+    
+}
+
+@media (max-height: 768px) { /* For screen sizes 1366, 1360, 1024 */
+    
+}
+
+
+@media (max-width: 1366px) {
+    .thankyou_text {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sponsored_by_text {
+        font-size: 22px;
+    }
+    .thankyou_text {
+        font-size: 32px;
+    }
+    .checkmark_img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1141px) {
+    .sponsored_by_text {
+        font-size: 20px;
+    }
+    .thankyou_text {
+        font-size: 28px;
+    }
+    .checkmark_img {
+        width: 95px;
+    }
+    .verify_email_text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .thankyou_text {
+        font-size: 24px;
+    }
+    .checkmark_img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 881px) {
+    .main_logo_img {
+        width: 50%;
+    }
+    .sponsored_by_text {
+        font-size: 18px;
+    }
+    .small_logos img {
+        width: 12%;
+    }
+    .thankyou_text {
+        font-size: 20px;
+    }
+    .checkmark_img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 651px) {
+    .sponsored_by_text{
+        font-size: 16px;
+    }
+    .thankyou_text {
+        font-size: 18px;
+    }
+    .verify_email_text {
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .checkmark_img {
+        width: 70px;
+    }
+}
