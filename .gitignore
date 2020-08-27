@@ -1,0 +1,6 @@
+vendor
+composer.lock
+.idea
+tvgadmin/application/logs/*
+tvgadmin/application/cache/*
+application/cache/*
