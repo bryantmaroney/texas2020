@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'home';
 
-$route['/home/getInfoStep1'] = 'home/getInfoStep1';
+$route['/candidatesearch/home/getInfoStep1'] = 'home/getInfoStep1';
 $route['step1'] = 'home/stepOne';
 $route['step2/(:any)'] = 'home/stepTwo/$1';
 $route['user/vote']['post'] = 'home/userVote';
