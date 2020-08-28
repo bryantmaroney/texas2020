@@ -225,7 +225,9 @@
 					<p class="sponsred_by"><?php echo $this->lang->line('sponsred_by') ?></p>
 				</div>
 				<div class="hr2">
-					<img src="<?php echo site_url() ?>assets/images/headerRight1Logo.png" width="165" height="auto" alt="">
+					<a href="https://www.commoncause.org/texas/" target="_blank">
+						<img src="<?php echo site_url() ?>assets/images/headerRight1Logo.png" width="165" height="auto" alt="">
+					</a>	
 				</div>
 			</div>
 
@@ -366,31 +368,17 @@
 		<div class="contactUs animate__animated  animate__slideInRight">
 			<span class="connect_us"><?php echo $this->lang->line('connect_us') ?></span>
 
-			<!--<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo base_url()?>" 
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;" 
-			target="_blank"><img src="<?php echo site_url() ?>assets/images/Facebook.png"></a>-->
-
-			<a href="https://www.facebook.com/pg/Texas2020VoterGuide/posts/?" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Facebook_optimized.png" width="25" height="auto"></a>
+			<a href="https://www.facebook.com/pg/Texas2020VoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Facebook_optimized.png" width="25" height="auto"></a>
 
 			<a href="https://www.instagram.com/texasvoterguide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Instagram_optimized.png" width="25" height="auto"></a>
-
-			<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo base_url() ?>&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;" 
-			target="_blank">
-				<img src="<?php echo site_url() ?>assets/images/optimized/Linkedin_optimized.png" width="25" height="auto">
-			</a>
-
-			<a href="http://pinterest.com/pin/create/button/?url=<?php echo base_url() ?>&description=Help US create more informed Voters in Texas and share this page"
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;"
-			target="_blank">
-				<img src="<?php echo site_url() ?>assets/images/optimized/Pinterest_optimized.png" width="25" height="auto">
-			</a>
-
-			<a href="https://twitter.com/share?ref_src=<?php echo base_url()?>"
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;" 
-			target="_blank">
-				<img src="<?php echo site_url() ?>assets/images/optimized/Twitter_optimized.png" width="25" height="auto">
-			</a>
+			
+			<!-- ** WAITING ON LINKEDIN PAGE URL **
+			<a href="https://www.pinterest.com/TexasVoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Linkedin_optimized.png" width="25" height="auto"></a>
+			-->
+			
+			<a href="https://www.pinterest.com/TexasVoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Pinterest_optimized.png" width="25" height="auto"></a>
+			
+			<a href="https://twitter.com/TexasVoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Twitter_optimized.png" width="25" height="auto"></a>
 		</div>
 	</div>
 	<!-- 10 solutions -->
@@ -541,31 +529,17 @@
 		<div class="contactUs">
 			<span class="connect_us"><?php echo $this->lang->line('connect_us') ?></span>
 
-			<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo base_url()?>" 
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;" 
-			target="_blank"><img src="<?php echo site_url() ?>assets/images/Facebook.png"></a>-->
-
-			<a href="https://www.facebook.com/pg/Texas2020VoterGuide/posts/?" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Facebook_optimized.png" width="25" height="auto"></a>
+			<a href="https://www.facebook.com/pg/Texas2020VoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Facebook_optimized.png" width="25" height="auto"></a>
 
 			<a href="https://www.instagram.com/texasvoterguide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Instagram_optimized.png" width="25" height="auto"></a>
-
-			<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo base_url() ?>&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;" 
-			target="_blank">
-				<img src="<?php echo site_url() ?>assets/images/optimized/Linkedin_optimized.png" width="25" height="auto">
-			</a>
-
-			<a href="http://pinterest.com/pin/create/button/?url=<?php echo base_url() ?>&description=Help US create more informed Voters in Texas and share this page"
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;"
-			target="_blank">
-				<img src="<?php echo site_url() ?>assets/images/optimized/Pinterest_optimized.png" width="25" height="auto">
-			</a>
-
-			<a href="https://twitter.com/share?ref_src=<?php echo base_url()?>"
-			onclick="window.open(this.href, 'mywin',`left=${screen.width/2 - 700/2},top=${screen.height/2 - 700/2},width=700,height=700,toolbar=1,resizable=0`); return false;" 
-			target="_blank">
-				<img src="<?php echo site_url() ?>assets/images/optimized/Twitter_optimized.png" width="25" height="auto">
-			</a>
+			
+			<!-- ** WAITING ON LINKEDIN PAGE URL **
+			<a href="https://www.pinterest.com/TexasVoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Linkedin_optimized.png" width="25" height="auto"></a>
+			-->
+			
+			<a href="https://www.pinterest.com/TexasVoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Pinterest_optimized.png" width="25" height="auto"></a>
+			
+			<a href="https://twitter.com/TexasVoterGuide/" target="_blank"><img src="<?php echo site_url() ?>assets/images/optimized/Twitter_optimized.png" width="25" height="auto"></a>
 		</div>
 	</div>
 
