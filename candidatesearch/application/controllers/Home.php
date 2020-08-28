@@ -37,6 +37,7 @@ class Home extends CI_Controller {
     }
 
     public function getInfoStep1() {
+
         if($this->input->post('address') || $this->input->post('zipcode')) {
             $_SESSION['inputs'] = $_POST;
 
@@ -148,12 +149,13 @@ class Home extends CI_Controller {
     }
 
     public function stepOne() {
+
         if(isset($_SESSION['district']) && isset($_SESSION['candidates'])) {
             $this->load->view('layouts/header', ['district' => $_SESSION['district']]);
             $this->load->view('step1', ['district' => $_SESSION['district'], 'candidates' => $_SESSION['candidates']]);
             $this->load->view('layouts/footer');
         } else {
-            redirect('/');
+        	redirect('/');
         }
     }
 

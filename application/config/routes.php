@@ -58,6 +58,7 @@ $route['get_address_info'] = 'home/getAddressInfo';
 
 $route['change/language'] = 'Home/changeLanguage';
 $route['subscribe/mail']['post'] = 'Home/subscribeMailToMailChimp';
+$route['activist/mail']['post'] = 'Home/activistMailToMailChimp';
 $route['user/vote']['post'] = 'Home/userVote';
 
 $route['slide/index/(:any)']['get'] = 'Home/SlideIndex/$1';
@@ -69,5 +70,6 @@ $route['CandidateSurveyPDF']['get'] = 'Home/candidate_survey_pdf';
 
 $route['issues/video-link/(:any)']['get'] = 'Home/lookupVideoLink/$1';
 
+$route['activists'] = 'Home/activists';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

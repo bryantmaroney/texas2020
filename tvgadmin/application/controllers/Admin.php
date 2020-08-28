@@ -62,7 +62,7 @@ class Admin extends CI_Controller {
                 $test_candidate['money_in_politics'] = json_encode($money_in_politics);
             }
 
-            $submitted_candidates = $this->db->select('*')->from('candidates')->order_by('created_at',"DESC")->get()->result_array();
+            $submitted_candidates = $this->db->select('*')->from('candidates')->where('admin_verify', 1)->order_by('created_at',"DESC")->get()->result_array();
             $voters = $this->db->select('*')->from('users_votes')->order_by('id',"DESC")->get()->result_array();
 
             $admins = $this->db->select('*')->from('admins')->where('id !=', $this->session->userdata('adminID'))->order_by('id',"DESC")->get()->result_array();

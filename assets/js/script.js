@@ -265,7 +265,7 @@ jQuery(document).ready(function($) {
 	$(document).on('click', '.close_red_section', function(){
 	    $(this).parent('.firstRed.header_red_section').hide(200)
 	})
-	$(document).on('click', '.signup, .remind_me', function(){
+	$(document).on('click', '.remind_me', function(){
 		const _this = $(this);
 		if(!$(this).parents('.redInp').find('.enter_your_email').val().includes('@')){
 			// swal("Error!", "Please enter a valid email address.", "error");
@@ -279,7 +279,37 @@ jQuery(document).ready(function($) {
 		}
 		else{
 			$.ajax({
-				url: site_url + 'subscribe/mail',   
+				url: site_url + 'subscribe/mail',
+				type: 'POST',
+				data: { mail: $(this).parents('.redInp').find('.enter_your_email').val() },
+				success:function(response){
+					// swal("Good job!", "Thanks for subscribing! We will notify you as soon as the Candidate Search has launched.", "success");
+					$('.remainSuccess').fadeIn(300,function(){
+						$(this).find('.reminModalContainer').addClass('animate__animated animate__rubberBand')
+					});
+					$('html, body').css({
+						'overflow-y': 'hidden'
+					});
+					_this.parents('.redInp').find('.enter_your_email').val('');
+				}
+			})
+		}
+	})
+	$(document).on('click', '.signup', function(){
+		const _this = $(this);
+		if(!$(this).parents('.redInp').find('.enter_your_email').val().includes('@')){
+			// swal("Error!", "Please enter a valid email address.", "error");
+			$('.errMess').html('Please enter a valid email address.');
+			$('.remainError').fadeIn(300,function(){
+				$(this).find('.reminModalContainer').addClass('animate__animated animate__shakeX')
+			});
+			$('html, body').css({
+				'overflow-y': 'hidden'
+			});
+		}
+		else{
+			$.ajax({
+				url: site_url + 'activist/mail',
 				type: 'POST',
 				data: { mail: $(this).parents('.redInp').find('.enter_your_email').val() },
 				success:function(response){
