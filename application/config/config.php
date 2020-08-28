@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 // $domain = 'texas2020.org';
 //$domain = 'localhost/texas';
-$domain = 'localhost:1334/';
+$domain = '167.172.234.150/';
 
 if (!empty($_SERVER['HTTPS'])){
         define('HTTP_PREFIX_STR', 'https://');
