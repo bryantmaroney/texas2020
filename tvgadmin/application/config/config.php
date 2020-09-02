@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 // $domain = 'soheard.dev/dev/texas-voter-guide';
 // $domain = 'texas2020.org/tvgadmin';
-$domain = '167.172.234.150/tvgadmin';
+$domain = '104.131.182.55/tvgadmin';
 //$domain = 'localhost/texas';
 
 if (!empty($_SERVER['HTTPS'])){
