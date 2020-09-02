@@ -48,7 +48,7 @@
                             </h2>
                         </div>
                         <div class="col-lg-6 col-md-10">
-                            <form class="form_card" method="post" action="/candidatesearch/home/getInfoStep1">
+                            <form class="form_card" method="post" action="home/getInfoStep1">
                                 <!-- <input placeholder="Email Address" type="text"> -->
                                 <input placeholder="Street Address" type="text" name="address" value="<?=isset($_SESSION['inputs']['address']) ? $_SESSION['inputs']['address'] : '' ?>" required>
                                 <div class="d-flex justify-content-between" >

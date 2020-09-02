@@ -16,7 +16,7 @@ class Home extends CI_Controller {
         $this->load->view('index');
         $this->load->view('layouts/footer');
     }
-    
+
     public function get_client_ip() {
         $ipaddress = '';
         if (getenv('HTTP_CLIENT_IP'))
@@ -59,7 +59,7 @@ class Home extends CI_Controller {
                         'state_lower_house_district_1_name' => (string)$xml->jurisdictions_info->state_legislation->state_lower_house_district_1->state_lower_house_district_1_name,
                         'state_lower_house_district_1_id_value' => (int)$xml->jurisdictions_info->state_legislation->state_lower_house_district_1_id->state_lower_house_district_1_id_value
                     );
-                    
+
                     $_SESSION['district'] = $res;
                     $_SESSION['candidates'] = $this->getCandidates();
 
@@ -89,7 +89,7 @@ class Home extends CI_Controller {
             'texas_senate_data' => [],
             'texas_house_data' => []
         ];
-        
+
         $districts = array("",$_SESSION['district']['congressional_district_id'],$_SESSION['district']['state_upper_house_district_1_id_value'], $_SESSION['district']['state_lower_house_district_1_id_value']);
         $candidatesData = $this->db->select('*')->from('candidates')->where_in('which_district', $districts)->get()->result_array();
 
@@ -240,7 +240,7 @@ class Home extends CI_Controller {
             $data['text'] = $in;
             $data['img'] = $image;
             $data['district'] = $_SESSION['district'];
-            
+
             if(isset($_GET['html'])) {
                 if($index === 'texas_senate') {
                     $res = !array_search($_SESSION['district']['state_upper_house_district_1_id_value'], ['2', '3', '5', '7', '8', '9', '10', '14', '15', '16', '17', '23', '25', '30', '31']);
@@ -252,13 +252,13 @@ class Home extends CI_Controller {
             } else {
                 $this->load->view('layouts/header', ['district' => $data['district']]);
                 $this->load->view('step2', $data);
-                $this->load->view('layouts/footer');    
+                $this->load->view('layouts/footer');
             }
         } else {
             redirect('/');
         }
     }
-    
+
     public function userVote(){
         $_SESSION['myVotes']['issues']->{$this->input->post('question') . '_answer'} = $this->input->post('answer');
         echo '<pre>';
@@ -301,7 +301,7 @@ class Home extends CI_Controller {
 
         echo json_encode(['indexName' => $name]);
     }
-    
+
     public function ChoiceShare($index) {
         $this->load->view('pageMeta', ['cardShareDetails' => [
                 'title' => 'Find your Candidates at Texas2020.org',
@@ -311,7 +311,7 @@ class Home extends CI_Controller {
             ]
         ]);
     }
-    
+
     public function importCandidates(){
         echo '<pre>';
         $path  = preg_replace('/application\/controllers$/', 'assets/files/', __DIR__);
