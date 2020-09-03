@@ -487,13 +487,7 @@ class Home extends CI_Controller {
             'status'        => 'subscribed',
         ]);
     }
-
-    public function activists()
-    {
-        $this->load->view('activists');
-
-    }
-
+    
     public function activistMailToMailChimp() {
 
         $MailChimp = new MailChimp('79c7b3cbe4a14c3a3bc3af171e753aca-us4');
@@ -504,6 +498,11 @@ class Home extends CI_Controller {
             'email_address' => $this->input->post('mail'),
             'status'        => 'subscribed',
         ]);
+
+    }
+
+    public function activists() {
+        $this->load->view('activists');
 
     }
 
